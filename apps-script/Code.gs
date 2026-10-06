@@ -172,7 +172,8 @@ function fetchInsights_(clinic, datePreset, token) {
 
 function getJson_(url) {
   for (let attempt = 0; attempt < 4; attempt++) {
-    const res = UrlFetchApp.fetch(url, { muteHttpExceptions: true });
+    // The only call to Meta in this script, and it is a read (GET). Nothing is ever created, edited or paused.
+    const res = UrlFetchApp.fetch(url, { method: 'get', muteHttpExceptions: true });
     const body = JSON.parse(res.getContentText());
     if (!body.error) return body;
     // 4, 17, 613, 80000-80014: rate limits. Back off and retry.

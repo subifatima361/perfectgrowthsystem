@@ -23,6 +23,20 @@ You can change these thresholds at the top of `Code.gs` (`FREQ_WARN`, `CPL_WARN_
 
 ---
 
+## Will this change anything in Ads Manager? No.
+
+Three separate layers make the system read-only:
+
+1. **The token can only read.** It's generated with the `ads_read` permission only. Changing ads requires `ads_management`, which it doesn't have, so Meta rejects any write attempt.
+2. **The System User can only view.** It's assigned to the ad accounts with **View performance** only, not *Manage campaigns* or full control.
+3. **The script only reads.** It makes one kind of request, a GET to the `/insights` reporting endpoint. It never creates, edits, pauses or deletes anything, and it doesn't touch budgets, audiences or billing.
+
+Creating the app and the System User happens in Business Settings and the developer portal, not in your campaigns, so your ads, ad sets, learning phase and delivery are not affected.
+
+## Only active ads
+
+The script asks Meta only for ads whose **effective status is ACTIVE**. That means the ad, its ad set **and** its campaign are all switched on and approved. Ads that are paused, in a paused ad set or campaign, in review, rejected or deleted are left out automatically. When you pause an ad in Ads Manager, its block disappears from the sheet at the next refresh. When you launch a new ad, it appears automatically.
+
 ## Setup, step by step (about 30–45 minutes, once)
 
 ### Part A: Get a permanent Meta access token (done once for the agency)
