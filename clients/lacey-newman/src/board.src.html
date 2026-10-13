@@ -1,0 +1,718 @@
+<title>Lacey Newman Ad Direction</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Montserrat:wght@300;400;500;600&family=Mrs+Saint+Delafield&display=swap">
+<style>
+/* Layout: a working brand board. Chrome stays quiet so the 1:1 ad mock-ups carry the colour. */
+:root{
+  /* Lacey's brand palette, sampled from her site. Ad artwork uses these in both themes. */
+  --teal:#062A2E; --ink:#01252A; --terra:#BF5E3D; --sand:#F5DFBB; --white:#FFFFFF; --black:#000000;
+  /* Page chrome */
+  --bg:#FBF8F3; --surface:#FFFFFF; --fg:#11262A; --muted:#5B6A6C; --line:#E4DDD2; --chip:#F1E9DC; --accent:#9E4A2E;
+  --display:"Instrument Serif","Cormorant Garamond",Georgia,serif;
+  --sans:"Montserrat","Helvetica Neue",Arial,sans-serif;
+  --script:"Mrs Saint Delafield","Brush Script MT",cursive;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#081A1C; --surface:#0E2427; --fg:#EDE6DA; --muted:#9FB0AF; --line:#1F3B3E; --chip:#15302F; --accent:#E08A68; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#081A1C; --surface:#0E2427; --fg:#EDE6DA; --muted:#9FB0AF; --line:#1F3B3E; --chip:#15302F; --accent:#E08A68; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:15px;line-height:1.6}
+.wrap{max-width:1200px;margin:0 auto;padding-inline:clamp(16px,4vw,40px);padding-block:40px 80px}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.05;text-wrap:balance;margin:0}
+h1{font-size:clamp(44px,7vw,84px)}
+h2{font-size:clamp(34px,4.4vw,52px)}
+h3{font-size:26px}
+p{margin:0}
+.eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;color:var(--muted)}
+.lede{max-width:64ch;color:var(--muted);font-size:16px}
+section{display:grid;gap:24px;padding-block:56px;border-top:1px solid var(--line)}
+header.top{display:grid;gap:18px;padding-block:8px 48px}
+.meta{display:flex;flex-wrap:wrap;gap:8px}
+.chip{background:var(--chip);border-radius:999px;padding:4px 12px;font-size:12px}
+.prose{display:grid;gap:12px;max-width:68ch}
+.prose ul{margin:0;padding-left:18px;display:grid;gap:6px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:32px}
+.two > *{min-width:0}
+.note{border-left:3px solid var(--accent);padding:10px 16px;background:var(--surface);font-size:14px}
+.note b{color:var(--accent)}
+
+/* swatches */
+.swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:16px}
+.sw{background:var(--surface);border:1px solid var(--line);display:grid}
+.sw .chipc{height:110px}
+.sw .info{padding:12px 14px;display:grid;gap:2px;font-size:13px}
+.sw .info strong{font-size:14px}
+.sw code{font-family:ui-monospace,Menlo,monospace;font-size:13px}
+.sw .use{color:var(--muted);font-size:12px;line-height:1.45}
+
+/* type specimens */
+.specimens{display:grid;gap:16px}
+.spec{background:var(--surface);border:1px solid var(--line);padding:22px;display:grid;gap:10px}
+.spec .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;font-size:12px;color:var(--muted)}
+.conf{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;padding:2px 8px;border-radius:999px}
+.conf.hi{background:#DDEBDD;color:#1F4D2A}
+.conf.mid{background:#F6E2C4;color:#6B3E12}
+.conf.lo{background:#F3D6CC;color:#7A2E17}
+
+/* rules table */
+.tbl{overflow-x:auto;border:1px solid var(--line);background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:640px}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--muted)}
+tr:last-child td{border-bottom:0}
+td.k{white-space:nowrap;font-weight:500}
+
+/* copy comparison */
+.copycmp{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px}
+.copycard{background:var(--surface);border:1px solid var(--line);padding:20px;display:grid;gap:10px;align-content:start}
+.copycard dl{margin:0;display:grid;grid-template-columns:110px 1fr;gap:6px 12px;font-size:14px}
+.copycard dt{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+.copycard dd{margin:0}
+.copycard .why{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+.tag{display:inline-block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
+.tag.orig{color:var(--muted)}
+.tag.alt{color:var(--accent)}
+
+/* ad grid */
+.setlabel{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;margin-top:12px}
+.setlabel h3{font-size:30px}
+.ads{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:28px}
+.adcard{display:grid;gap:12px;align-content:start;min-width:0}
+.adcard .cap{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.adcard .cap strong{font-family:var(--display);font-size:22px;font-weight:400}
+.kind{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;padding:3px 8px;border-radius:999px;white-space:nowrap}
+.kind.brand{background:var(--chip);color:var(--fg)}
+.kind.stop{background:var(--terra);color:#fff}
+.adcard ul{margin:0;padding-left:18px;font-size:13px;color:var(--muted);display:grid;gap:4px}
+.adcard ul b{color:var(--fg);font-weight:600}
+
+/* ======== AD ARTWORK (1080×1080, 1cqw = 10.8px) ======== */
+.ad{container-type:inline-size;aspect-ratio:1/1;max-width:100%;width:100%;position:relative;overflow:hidden;font-family:var(--sans);box-shadow:0 1px 2px rgba(0,0,0,.08),0 8px 24px rgba(0,0,0,.08)}
+.ad *{margin:0}
+.ad .eb{font-size:2.3cqw;letter-spacing:.24em;text-transform:uppercase;font-weight:500}
+.ad .hl{font-family:var(--display);font-weight:400;line-height:1.02;text-wrap:balance}
+.ad .sub{font-family:var(--display);font-style:italic;line-height:1.15}
+.ad .btn{display:inline-block;white-space:nowrap;background:var(--terra);color:#fff;font-family:var(--display);font-size:3.6cqw;padding:2cqw 4.6cqw;line-height:1}
+.ad .link{font-family:var(--display);font-style:italic;font-size:4cqw;border-bottom:.25cqw solid currentColor;padding-bottom:.6cqw;display:inline-block}
+.ad .photo{background-size:cover;background-position:center}
+.ad .band{position:absolute;left:0;right:0;bottom:0;display:flex;justify-content:space-between;align-items:center;gap:3cqw;padding:3.4cqw 6cqw}
+.ad .band .lbl{font-size:2cqw;letter-spacing:.2em;text-transform:uppercase;font-weight:500;line-height:1.5}
+.ad .band .lbl em{font-family:var(--display);font-style:italic;text-transform:none;letter-spacing:0;font-size:3.4cqw;display:block;font-weight:400}
+
+/* 1A Kitchen editorial */
+.a1a{background:var(--sand);color:var(--teal)}
+.a1a .txt{position:absolute;left:6cqw;top:7cqw;width:50cqw;display:grid;gap:3.4cqw}
+.a1a .hl{font-size:7.4cqw}
+.a1a .sub{font-size:4.6cqw;color:var(--terra)}
+.a1a .photo{position:absolute;right:0;top:0;width:38cqw;height:100%}
+.a1a .foot{position:absolute;left:6cqw;bottom:7cqw;display:grid;gap:2cqw;justify-items:start}
+.a1a .foot small{font-size:2cqw;letter-spacing:.2em;text-transform:uppercase}
+
+/* 1B Teal statement */
+.a1b{background:var(--teal);color:#fff}
+.a1b > .in{position:absolute;inset:0;display:grid;align-content:space-between;padding:8cqw 7cqw}
+.a1b .eb{color:var(--sand)}
+.a1b .hl{font-size:10cqw}
+.a1b .hl i{color:var(--sand)}
+.a1b .sub{font-size:5cqw;color:#fff;opacity:.9}
+.a1b .row{display:flex;justify-content:space-between;align-items:end;gap:4cqw}
+.a1b .link{color:var(--sand)}
+.a1b small{font-size:2cqw;letter-spacing:.2em;text-transform:uppercase;color:var(--sand);opacity:.8;text-align:right}
+
+/* 1C Lock screen */
+.a1c{background:radial-gradient(120% 90% at 30% 10%,#0E3A3F 0%,var(--teal) 45%,#020F11 100%);color:#fff}
+.a1c .clock{position:absolute;top:6cqw;left:0;right:0;text-align:center}
+.a1c .clock .d{font-size:2.6cqw;font-weight:500;opacity:.85}
+.a1c .clock .t{font-family:var(--display);font-size:22cqw;line-height:.95}
+.a1c .notes{position:absolute;left:8cqw;right:8cqw;top:34cqw;display:grid;gap:2cqw}
+.a1c .n{background:rgba(245,223,187,.16);backdrop-filter:blur(6px);border-radius:3.6cqw;padding:2.6cqw 3cqw;display:grid;grid-template-columns:7cqw 1fr auto;gap:2.6cqw;align-items:center}
+.a1c .n .ic{width:7cqw;height:7cqw;border-radius:1.8cqw;display:grid;place-items:center;font-family:var(--display);font-size:4cqw}
+.a1c .n .ic.c{background:var(--terra)} .a1c .n .ic.s{background:var(--sand);color:var(--teal)}
+.a1c .n b{display:block;font-size:2.7cqw;font-weight:600}
+.a1c .n span{font-size:2.6cqw;opacity:.9}
+.a1c .n time{font-size:2.2cqw;opacity:.7;align-self:start}
+.a1c .bottom{position:absolute;left:8cqw;right:8cqw;bottom:6cqw;display:grid;gap:2.4cqw}
+.a1c .bottom .hl{font-size:5.8cqw}
+.a1c .bottom .row{display:flex;justify-content:space-between;align-items:center;gap:3cqw}
+.a1c .bottom .sub{font-size:3.8cqw;color:var(--sand)}
+
+/* 1D Quiet portrait */
+.a1d{background:var(--sand);color:var(--teal)}
+.a1d .photo{position:absolute;inset:0 0 44cqw 0;background-position:center 30%}
+.a1d .panel{position:absolute;left:0;right:0;bottom:0;height:44cqw;padding:5cqw 6cqw;display:grid;gap:2.4cqw;align-content:start}
+.a1d .hl{font-size:6.6cqw}
+.a1d .hl i{color:var(--terra)}
+.a1d .row{display:flex;justify-content:space-between;align-items:center;gap:3cqw;margin-top:1cqw}
+.a1d .sub{font-size:3.8cqw}
+.a1d .tagp{position:absolute;top:5cqw;left:6cqw;background:var(--white);color:var(--teal);padding:1.4cqw 2.4cqw}
+
+/* 1E Pick one */
+.a1e{background:var(--sand);color:var(--teal);}
+.a1e > .in{position:absolute;inset:0;padding:8cqw 7cqw;display:grid;align-content:space-between}
+.a1e .big{font-family:var(--display);font-size:15cqw;line-height:.92}
+.a1e .strike{position:relative;display:inline-block;color:var(--teal);opacity:.55}
+.a1e .strike::after{content:"";position:absolute;left:-2%;right:-2%;top:52%;height:1.1cqw;background:var(--terra);transform:rotate(-3deg)}
+.a1e .both{font-family:var(--display);font-style:italic;color:var(--terra)}
+.a1e .row{display:flex;justify-content:space-between;align-items:end;gap:4cqw}
+.a1e .row p{font-size:2.8cqw;max-width:44cqw;line-height:1.45}
+
+/* 1F Receipt */
+.a1f{background:var(--teal);color:var(--teal)}
+.a1f .rc{position:absolute;left:21cqw;top:3cqw;width:58cqw;background:#FFFDF8;padding:4cqw 5cqw 4cqw;transform:rotate(-2.5deg);box-shadow:0 2cqw 4cqw rgba(0,0,0,.35);font-size:2.5cqw;letter-spacing:.06em;text-transform:uppercase}
+.a1f .rc::after{content:"";position:absolute;left:0;right:0;bottom:-2cqw;height:2cqw;background:linear-gradient(-45deg,transparent 1cqw,#FFFDF8 0) 0 0/2cqw 2cqw repeat-x,linear-gradient(45deg,transparent 1cqw,#FFFDF8 0) 0 0/2cqw 2cqw repeat-x}
+.a1f .rc h4{font-family:var(--display);font-weight:400;font-size:6cqw;text-transform:none;letter-spacing:0;text-align:center;line-height:1}
+.a1f .rc .d{text-align:center;font-size:2cqw;opacity:.6;margin-bottom:2.6cqw}
+.a1f .li{display:flex;justify-content:space-between;border-bottom:.2cqw dashed rgba(6,42,46,.25);padding:.7cqw 0;font-variant-numeric:tabular-nums}
+.a1f .li.you{color:var(--terra);font-weight:600}
+.a1f .tot{display:flex;justify-content:space-between;font-weight:600;padding-top:1.6cqw;font-size:2.8cqw}
+.a1f .msg{margin-top:2.6cqw;font-family:var(--display);text-transform:none;letter-spacing:0;font-size:4cqw;line-height:1.1;text-align:center}
+.a1f .msg i{color:var(--terra)}
+.a1f .band{background:var(--terra);color:#fff;padding:2.6cqw 6cqw}
+.a1f .band .go{white-space:nowrap;font-family:var(--display);font-size:3.8cqw;border-bottom:.25cqw solid #fff}
+
+/* 2A Unread badge */
+.a2a{background:var(--sand);color:var(--teal)}
+.a2a .top{position:absolute;left:7cqw;right:7cqw;top:6cqw;display:grid;gap:2.2cqw;text-align:center;justify-items:center}
+.a2a .hl{font-size:6.6cqw;max-width:80cqw}
+.a2a .icon{position:absolute;left:50%;top:40cqw;transform:translateX(-50%);width:26cqw;height:26cqw;border-radius:6cqw;background:linear-gradient(160deg,#0E3A3F,var(--teal));display:grid;place-items:center;box-shadow:0 2cqw 5cqw rgba(6,42,46,.25)}
+.a2a .env{width:15cqw;height:10.5cqw;border:.9cqw solid var(--sand);border-radius:1.2cqw;position:relative;overflow:hidden}
+.a2a .env::before{content:"";position:absolute;left:50%;top:-7.6cqw;width:12cqw;height:12cqw;border:.9cqw solid var(--sand);transform:translateX(-50%) rotate(45deg)}
+.a2a .badge{position:absolute;right:-5cqw;top:-4cqw;background:var(--terra);color:#fff;font-weight:600;font-size:5.4cqw;padding:1cqw 2.6cqw;border-radius:999px;border:.8cqw solid var(--sand);font-variant-numeric:tabular-nums}
+.a2a .sub{position:absolute;left:0;right:0;top:70cqw;text-align:center;font-size:4.2cqw;color:var(--terra)}
+.a2a .band{background:var(--teal);color:var(--sand)}
+.a2a .band .btn{font-size:3cqw;padding:1.8cqw 3.4cqw}
+
+/* 2B Desk after hours */
+.a2b{background:var(--teal);color:#fff}
+.a2b .photo{position:absolute;inset:0 0 40cqw 0}
+.a2b .photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,42,46,0) 50%,rgba(6,42,46,.9) 100%)}
+.a2b .eb{position:absolute;top:5cqw;left:6cqw;background:var(--teal);color:var(--sand);padding:1.4cqw 2.4cqw}
+.a2b .txt{position:absolute;left:6cqw;right:6cqw;bottom:6cqw;display:grid;gap:2.6cqw}
+.a2b .hl{font-size:7.4cqw}
+.a2b .row{display:flex;justify-content:space-between;align-items:end;gap:3cqw}
+.a2b .sub{font-size:4.2cqw;color:var(--sand);max-width:50cqw}
+.a2b .btn{font-size:3.1cqw}
+
+/* 2C Out of office */
+.a2c{background:var(--white);color:#1d1d1f}
+.a2c .q{position:absolute;left:6cqw;right:6cqw;top:5cqw;font-family:var(--display);font-size:5cqw;color:var(--teal);line-height:1.05}
+.a2c .mail{position:absolute;left:6cqw;right:6cqw;top:19cqw;border:.25cqw solid #e3e3e3;border-radius:2cqw;overflow:hidden;font-size:2.7cqw}
+.a2c .bar{background:#F4F4F4;padding:1.8cqw 3cqw;display:flex;gap:1.4cqw}
+.a2c .bar i{width:1.8cqw;height:1.8cqw;border-radius:50%;background:#d9d9d9;display:block}
+.a2c .fld{padding:1.8cqw 3cqw;border-bottom:.2cqw solid #eee;display:flex;gap:2cqw}
+.a2c .fld span{color:#8a8a8a;width:13cqw;flex:none}
+.a2c .subj{font-weight:600}
+.a2c .body{padding:3cqw;display:grid;gap:1.8cqw;line-height:1.45}
+.a2c .times{display:flex;gap:2cqw}
+.a2c .times b{background:var(--sand);color:var(--teal);padding:.6cqw 2cqw;border-radius:999px;font-weight:600}
+.a2c .sig{font-family:var(--display);font-style:italic;font-size:3.6cqw;color:var(--terra)}
+.a2c .band{background:var(--teal);color:#fff}
+.a2c .band .sub{font-size:3.6cqw;color:var(--sand)}
+.a2c .band .btn{font-size:3cqw;padding:1.8cqw 3.4cqw}
+
+/* 2D Three times */
+.a2d{background:var(--teal);color:#fff;}
+.a2d > .in{position:absolute;inset:0;padding:7cqw;display:grid;grid-template-columns:40cqw 1fr;gap:5cqw}
+.a2d .times{display:grid;align-content:center;gap:1cqw;border-right:.2cqw solid rgba(245,223,187,.35);padding-right:4cqw}
+.a2d .times div{font-family:var(--display);font-size:15cqw;line-height:.95;color:var(--sand);font-variant-numeric:tabular-nums}
+.a2d .times small{display:block;font-family:var(--sans);font-size:1.8cqw;letter-spacing:.24em;color:#fff;opacity:.7}
+.a2d .right{display:grid;align-content:space-between}
+.a2d .eb{color:var(--sand)}
+.a2d .hl{font-size:7.2cqw}
+.a2d .sub{font-size:3.9cqw;opacity:.9}
+.a2d .link{color:var(--sand);font-size:3.6cqw;justify-self:start}
+
+/* 2E Rust chair in the glow circle */
+.a2e{background:var(--white);color:var(--teal)}
+.a2e .circ{position:absolute;right:-10cqw;top:-6cqw;width:70cqw;height:70cqw;border-radius:50%;background:linear-gradient(180deg,var(--sand),#FFF7EA)}
+.a2e .photo{position:absolute;right:-2cqw;top:4cqw;width:54cqw;height:54cqw;border-radius:50%}
+.a2e .txt{position:absolute;left:6cqw;right:6cqw;bottom:6cqw;display:grid;gap:2.4cqw}
+.a2e .eb{position:absolute;left:6cqw;top:7cqw;width:30cqw;line-height:1.6}
+.a2e .hl{font-size:7.6cqw;max-width:78cqw}
+.a2e .hl i{color:var(--terra)}
+.a2e .row{display:flex;justify-content:space-between;align-items:end;gap:3cqw}
+.a2e .sub{font-size:3.8cqw;max-width:50cqw}
+.a2e .btn{font-size:3.1cqw}
+
+/* 2F Sticky note */
+.a2f{background:var(--terra);color:#fff}
+.a2f .hl{position:absolute;left:6cqw;right:6cqw;top:6cqw;font-size:7.2cqw}
+.a2f .lap{position:absolute;left:12cqw;right:12cqw;top:34cqw;height:42cqw;background:var(--ink);border-radius:2.4cqw 2.4cqw 0 0;border:1.6cqw solid #0F1B1C;padding:3cqw;display:grid;gap:1.6cqw;align-content:start}
+.a2f .lap i{display:block;height:2.2cqw;border-radius:1cqw;background:rgba(245,223,187,.18)}
+.a2f .lap i:nth-child(odd){width:85%} .a2f .lap i:nth-child(3n){width:60%}
+.a2f .base{position:absolute;left:6cqw;right:6cqw;top:76cqw;height:2.6cqw;background:#0F1B1C;border-radius:0 0 2cqw 2cqw}
+.a2f .note{position:absolute;left:44cqw;top:40cqw;width:30cqw;height:28cqw;background:var(--sand);transform:rotate(4deg);box-shadow:0 1.6cqw 3cqw rgba(0,0,0,.3);padding:3cqw;color:var(--teal);font-family:var(--script);font-size:5.2cqw;line-height:1}
+.a2f .foot{position:absolute;left:6cqw;right:6cqw;bottom:5cqw;display:flex;justify-content:space-between;align-items:center;gap:3cqw}
+.a2f .foot .sub{font-size:3.7cqw}
+.a2f .foot .btn{background:#fff;color:var(--terra);font-size:3cqw}
+
+/* 3A Planner */
+.a3a{background:var(--sand);color:var(--teal)}
+.a3a .photo{position:absolute;right:6cqw;top:6cqw;width:44cqw;height:52cqw}
+.a3a .num{position:absolute;right:3cqw;top:2cqw;font-family:var(--display);font-size:13cqw;color:var(--terra);line-height:1}
+.a3a .eb{position:absolute;left:6cqw;top:7cqw;width:36cqw;line-height:1.6}
+.a3a .txt{position:absolute;left:6cqw;right:6cqw;bottom:6cqw;display:grid;gap:2.4cqw}
+.a3a .hl{font-size:8cqw;max-width:60cqw}
+.a3a .row{display:flex;justify-content:space-between;align-items:end;gap:3cqw}
+.a3a .sub{font-size:3.7cqw;max-width:52cqw;font-style:normal;font-family:var(--sans);line-height:1.45}
+.a3a .btn{font-size:3.1cqw}
+
+/* 3B Not-equal */
+.a3b{background:var(--white);color:var(--teal);}
+.a3b > .in{position:absolute;inset:0;padding:7cqw;display:grid;align-content:space-between}
+.a3b .eq{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:3cqw}
+.a3b .eq span{font-size:2.6cqw;letter-spacing:.22em;text-transform:uppercase;font-weight:500}
+.a3b .eq span:last-child{text-align:right}
+.a3b .eq b{font-family:var(--display);font-weight:400;font-size:34cqw;line-height:.8;color:var(--terra)}
+.a3b .hl{font-size:7.6cqw}
+.a3b .row{display:flex;justify-content:space-between;align-items:end;gap:3cqw}
+.a3b .sub{font-size:3.6cqw;max-width:52cqw}
+
+/* 3C No room */
+.a3c{background:#FAFAF8;color:var(--teal)}
+.a3c .q{position:absolute;left:6cqw;right:6cqw;top:4.6cqw;font-family:var(--display);font-size:5.2cqw;line-height:1.05}
+.a3c .cal{position:absolute;left:6cqw;right:6cqw;top:19cqw;height:58cqw;background:#fff;border:.25cqw solid #e6e6e6;border-radius:1.6cqw;display:grid;grid-template-columns:7cqw repeat(5,1fr);grid-template-rows:5cqw 1fr;font-size:1.9cqw;overflow:hidden}
+.a3c .dh{border-bottom:.2cqw solid #eee;display:grid;place-items:center;font-weight:600;letter-spacing:.1em;color:#777}
+.a3c .hrs{display:grid;grid-template-rows:repeat(8,1fr);color:#999;font-size:1.6cqw;padding:.6cqw}
+.a3c .col{display:grid;grid-template-rows:repeat(8,1fr);gap:.5cqw;padding:.5cqw;border-left:.2cqw solid #f1f1f1}
+.a3c .ev{border-radius:.8cqw;padding:.6cqw .8cqw;line-height:1.2;overflow:hidden;font-weight:500}
+.a3c .t{background:var(--teal);color:#fff} .a3c .s{background:var(--sand);color:var(--teal)} .a3c .r{background:#E9C2B3;color:#5a2412}
+.a3c .drag{position:absolute;left:45cqw;top:37cqw;width:26cqw;border:.4cqw dashed var(--terra);background:rgba(255,255,255,.95);border-radius:1.2cqw;padding:1.6cqw 2cqw;transform:rotate(-4deg);box-shadow:0 2cqw 4cqw rgba(0,0,0,.18);font-size:2.6cqw;font-weight:600;color:var(--terra)}
+.a3c .drag small{display:block;font-weight:500;color:#7a2e17;font-size:2cqw;margin-top:.6cqw}
+.a3c .band{background:var(--teal);color:#fff}
+.a3c .band .sub{font-size:3.6cqw;color:var(--sand)}
+.a3c .band .btn{font-size:3cqw;padding:1.8cqw 3.4cqw}
+
+/* 3D Incense desk */
+.a3d{background:var(--teal);color:#fff}
+.a3d .photo{position:absolute;right:0;top:0;bottom:0;width:48cqw}
+.a3d .txt{position:absolute;left:6cqw;top:7cqw;bottom:7cqw;width:42cqw;display:grid;align-content:space-between}
+.a3d .eb{color:var(--sand);line-height:1.6}
+.a3d .hl{font-size:7cqw}
+.a3d .hl i{color:var(--sand)}
+.a3d .sub{font-size:4cqw;opacity:.9;margin-top:3cqw}
+.a3d .btn{justify-self:start;font-size:3.1cqw}
+
+/* 3E Clients up, hours down */
+.a3e{background:var(--teal);color:#fff;}
+.a3e > .in{position:absolute;inset:0;padding:7cqw;display:grid;align-content:space-between}
+.a3e .eb{color:var(--sand)}
+.a3e .rows{display:grid;gap:1cqw}
+.a3e .r{display:flex;align-items:baseline;justify-content:space-between;border-bottom:.2cqw solid rgba(245,223,187,.3);padding-bottom:1.4cqw}
+.a3e .r span{font-family:var(--display);font-size:13cqw;line-height:1}
+.a3e .r b{font-family:var(--display);font-weight:400;font-size:13cqw;line-height:1}
+.a3e .r.up b{color:var(--sand)} .a3e .r.dn b{color:var(--terra)}
+.a3e .hl{font-size:5.2cqw}
+.a3e .row{display:flex;justify-content:space-between;align-items:end;gap:3cqw}
+
+/* 3F Tiny life */
+.a3f{background:var(--sand);color:var(--teal);}
+.a3f > .in{position:absolute;inset:0;padding:6cqw;display:grid;align-content:space-between}
+.a3f .huge{font-family:var(--display);font-size:20cqw;line-height:.86;letter-spacing:-.01em}
+.a3f .tiny{font-size:1.9cqw;margin-top:2.4cqw;display:flex;align-items:center;gap:2cqw}
+.a3f .tiny b{font-weight:500}
+.a3f .tiny .sc{font-family:var(--script);font-size:6cqw;color:var(--terra);line-height:1}
+.a3f .row{display:flex;justify-content:space-between;align-items:end;gap:3cqw}
+.a3f .sub{font-size:3.8cqw;max-width:52cqw}
+
+@media (prefers-reduced-motion: no-preference){.adcard .ad{transition:transform .25s ease}.adcard:hover .ad{transform:translateY(-3px)}}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+
+<div class="wrap">
+
+<header class="top">
+  <span class="eyebrow">Perfect Growth System · Visual direction for the designer</span>
+  <h1>Lacey Newman<br>Meta ads, round one</h1>
+  <p class="lede">Brand guide, copy and ad concepts for the "Reclaim 15 Hours" free calendar campaign. All ads are 1:1 static (1080 × 1080). Three copies, each with an original and an optimised version, and three ads per version: two on-brand, one built to stop the scroll. That's 18 ads.</p>
+  <div class="meta"><span class="chip">Goal: lead magnet opt-ins</span><span class="chip">Offer: free calendar, "Reclaim 15 Hours of Every Week"</span><span class="chip">Landing page: go.laceynewman.com/reclaim-15-hours</span><span class="chip">No stock photos · no before/after</span></div>
+</header>
+
+<section id="niche">
+  <span class="eyebrow">01 · Who she is and who she sells to</span>
+  <h2>The niche</h2>
+  <div class="two">
+    <div class="prose">
+      <p><b>Lacey Newman is a business strategist and coach for high-achieving women entrepreneurs.</b> Her line is "I help high-achieving women rise with aligned power, peace, and profit." She sells clarity, structure and self-leadership to women who built their business by doing everything themselves and are now stretched thin.</p>
+      <p><b>Her offers:</b></p>
+      <ul>
+        <li><b>Rise Higher Society™</b>, an 8-week live group coaching programme on strategy, systems and self-leadership, then how to amplify it with AI.</li>
+        <li><b>Free strategy calls</b> ("Lets Talk Strategy", "Schedule a Call").</li>
+        <li><b>The free calendar</b> (this campaign). It's the top of her funnel and feeds the calls and the Society.</li>
+      </ul>
+    </div>
+    <div class="prose">
+      <p><b>The audience in these ads:</b> women founders, often moms, running service businesses where the business "runs through them". More clients means more of their own hours. They're successful, not struggling. Their problem is time and capacity, not getting started.</p>
+      <p><b>Her voice:</b> warm, calm, a little elevated, like a friend inviting you in. Her buttons say "Pull Up a Chair" and "Drop Me a Note". The ads should feel like a quiet exhale in the feed, not hype. Scroll-stoppers get attention with an idea, never with shouting or urgency tricks.</p>
+      <div class="note"><b>Tone guardrail:</b> no fake scarcity, no income claims, no before/after. Meta also restricts ads that state personal attributes about the viewer. Audience call-outs like "For women founders" are fine; avoid lines like "You're a burnt-out mom".</div>
+    </div>
+  </div>
+</section>
+
+<section id="brand">
+  <span class="eyebrow">02 · Brand guide</span>
+  <h2>Colours</h2>
+  <p class="lede">Hex values sampled pixel-for-pixel from the screenshots of her site. They're consistent across every section, so treat these as the palette. Get her designer's source file if one exists.</p>
+  <div class="swatches">
+    <div class="sw"><div class="chipc" style="background:#062A2E"></div><div class="info"><strong>Deep Teal</strong><code>#062A2E</code><span class="use">Dark sections, footer bands, full-bleed text ads. Her main dark.</span></div></div>
+    <div class="sw"><div class="chipc" style="background:#BF5E3D"></div><div class="info"><strong>Terracotta</strong><code>#BF5E3D</code><span class="use">Buttons, accents, numerals, one highlighted word. Use sparingly.</span></div></div>
+    <div class="sw"><div class="chipc" style="background:#F5DFBB"></div><div class="info"><strong>Sand</strong><code>#F5DFBB</code><span class="use">Main light background ("Let's Work Together" section). Also used as text on teal.</span></div></div>
+    <div class="sw"><div class="chipc" style="background:#FFFFFF;border-bottom:1px solid var(--line)"></div><div class="info"><strong>White</strong><code>#FFFFFF</code><span class="use">Cards, panels, secondary buttons ("Pull Up a Chair").</span></div></div>
+    <div class="sw"><div class="chipc" style="background:#01252A"></div><div class="info"><strong>Logo Ink</strong><code>#01252A</code><span class="use">The Rise Higher logotype. A hair darker than Deep Teal; use only for the logo.</span></div></div>
+    <div class="sw"><div class="chipc" style="background:linear-gradient(180deg,#F5DFBB,#FFF7EA)"></div><div class="info"><strong>Glow Circle</strong><code>#F5DFBB → #FFF7EA</code><span class="use">The peach circle behind "Society" in the logo. A good graphic device.</span></div></div>
+  </div>
+  <div class="note"><b>Brown isn't in her palette.</b> The design idea for Copy 2 in the copy doc asks for "a brown band". Her site uses Deep Teal for that job (see the "Ready to Meet Your Next Level?" strip), so every band below is teal. Her site also has a pure black strip under the photo row; leave it out of ads.</div>
+
+  <h2 style="margin-top:24px">Type</h2>
+  <p class="lede">I couldn't open her live site from my environment, so these were identified from the screenshots. The designer should confirm the exact names with the WhatFont browser extension (or Inspect → Computed → font-family) on laceynewman.com before building.</p>
+  <div class="specimens">
+    <div class="spec">
+      <div class="row"><span><b>Display serif</b> · headlines, buttons, italic pull quotes</span><span class="conf lo">Name to confirm</span></div>
+      <div style="font-family:var(--display);font-size:clamp(34px,5vw,56px);line-height:1.05">You Built It All By Yourself.</div>
+      <div style="font-family:var(--display);font-style:italic;font-size:clamp(26px,3.6vw,40px);line-height:1.1">Are you ready to finally have a business that supports you?</div>
+      <p style="font-size:13px;color:var(--muted)">A condensed, high-contrast serif with a matching italic (curly "y", long "f"). She uses it for every headline and every button label. It isn't a standard Google font, so it's probably a licensed font uploaded to her site builder. <b>This board uses Instrument Serif as a stand-in</b>; it's the closest free match.</p>
+    </div>
+    <div class="spec">
+      <div class="row"><span><b>Sans</b> · body copy, tracked uppercase eyebrows</span><span class="conf hi">Montserrat, high confidence</span></div>
+      <div style="font-family:var(--sans);font-size:13px;letter-spacing:.24em;text-transform:uppercase;font-weight:500">Let's work together</div>
+      <div style="font-family:var(--sans);font-size:17px">You've built success by doing it all. Now it's time to build it differently.</div>
+      <p style="font-size:13px;color:var(--muted)">Body at Regular 400, eyebrows at Medium 500 in caps with wide tracking (about 0.2–0.25em). She bolds key phrases in body copy ("Doors are OPEN until 9/2").</p>
+    </div>
+    <div class="spec">
+      <div class="row"><span><b>Signature script</b> · accent word only</span><span class="conf mid">Style match only</span></div>
+      <div style="font-family:var(--script);font-size:56px;line-height:1;color:var(--terra)">Society</div>
+      <p style="font-size:13px;color:var(--muted)">Appears once, in the logo ("Society" in terracotta). Use it for at most one handwritten touch per ad, never for a full line of copy. The stand-in here is Mrs Saint Delafield.</p>
+    </div>
+    <div class="spec">
+      <div class="row"><span><b>Logo</b> · "RISE HIGHER" with swash R and wavy crossbars</span><span class="conf mid">Use the file</span></div>
+      <p style="font-size:13px;color:var(--muted)">Custom display lettering. Don't retype it; ask Lacey for the logo files (SVG/PNG). These ads promote the calendar, not the Society, so the logo is optional. If it's used, put it small in a corner.</p>
+    </div>
+  </div>
+
+  <h2 style="margin-top:24px">Photography and styling</h2>
+  <div class="two">
+    <div class="prose">
+      <ul>
+        <li><b>Only her own photos.</b> Her site has a branded shoot: Lacey on a rust velvet chair, at a white kitchen counter, sitting against a sunlit white wall, plus flat-lays (laptop on rattan, spiral planner, pink teapot and journal, incense by a laptop). The mock-ups below use crops from your screenshots; pull full-resolution versions from the site or ask her for the shoot folder.</li>
+        <li><b>Light:</b> soft natural daylight, warm whites, real shadows. Never flash, never saturated.</li>
+        <li><b>Graphics:</b> where there's no photo, build the visual from type, the glow circle or a simple UI mock-up (phone, inbox, calendar). No illustration packs, no 3D, no emoji.</li>
+      </ul>
+    </div>
+    <div class="prose">
+      <ul>
+        <li><b>Buttons:</b> two styles from her site. A solid terracotta block with a white serif label and square corners, and a serif italic text link with an underline ("Join Now", "Schedule a Call"). No rounded pills.</li>
+        <li><b>Layout:</b> generous margins, left-aligned or centred editorial blocks, one accent colour per ad. Her section numbers ("1." in terracotta serif) are a nice detail to borrow.</li>
+        <li><b>Italic for emphasis:</b> set one or two key words of a headline in the italic, recoloured sand (on teal) or terracotta (on light).</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="rules">
+  <span class="eyebrow">03 · Production specs for every ad</span>
+  <h2>Ad system</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Element</th><th>Spec at 1080 × 1080</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td class="k">Canvas</td><td>1080 × 1080 px, 1:1, sRGB</td><td>Keep 65 px clear on every edge. Keep logos and buttons clear of the bottom 100 px if this also runs in Stories (Meta crops/overlays there).</td></tr>
+      <tr><td class="k">Eyebrow</td><td>Montserrat Medium, 24–28 px, caps, 0.24em tracking</td><td>Always the audience call-out from the copy ("For women founders").</td></tr>
+      <tr><td class="k">Headline</td><td>Display serif, 64–110 px, line-height 1.0–1.05</td><td>Max about 14 words on the image. One or two words may switch to the italic.</td></tr>
+      <tr><td class="k">Subheadline</td><td>Display serif italic, 40–52 px</td><td>Or Montserrat 36–40 px when it's a long question.</td></tr>
+      <tr><td class="k">On-image CTA</td><td>Terracotta block, serif label 32–40 px, white text</td><td>Contrast is about 4.4:1, so keep the label 32 px or larger. The real Meta button should be "Download" or "Sign Up", which matches the free calendar.</td></tr>
+      <tr><td class="k">Offer line</td><td>"FREE CALENDAR · Reclaim 15 Hours of Every Week"</td><td>Use on most ads, usually in a teal band at the bottom. It names the lead magnet, so viewers know what they get.</td></tr>
+      <tr><td class="k">Text weight</td><td>Under about 25% of the canvas for photo ads</td><td>Text-only ads are exempt by design, but keep them to headline + sub + CTA.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<!-- ================= COPY 1 ================= -->
+<section id="copy1">
+  <span class="eyebrow">04 · Copy 1 of 3</span>
+  <h2>Moms running a business and a home</h2>
+  <div class="copycmp">
+    <div class="copycard"><span class="tag orig">Original (from the copy doc)</span><dl>
+      <dt>Eyebrow</dt><dd>For moms running a business and a home</dd>
+      <dt>Headline</dt><dd>Do you feel trapped choosing between your work and your family?</dd>
+      <dt>Sub</dt><dd>What if you could give both your best?</dd>
+      <dt>CTA</dt><dd>Reclaim Your Hours. Get the Free Calendar.</dd></dl></div>
+    <div class="copycard"><span class="tag alt">Optimised alternate</span><dl>
+      <dt>Eyebrow</dt><dd>For moms running a business and a home</dd>
+      <dt>Headline</dt><dd>Your business got your best today. Your family got what was left.</dd>
+      <dt>Sub</dt><dd>There's a way to give both your best. It starts with your calendar.</dd>
+      <dt>CTA</dt><dd>Get the Free Calendar</dd></dl>
+      <p class="why"><b>Why:</b> "Do you feel trapped" asks her to admit a feeling. The new headline shows her own day back to her, so she recognises it without being asked. The sub ties the promise to the actual lead magnet (a calendar), and the CTA becomes one clear action.</p></div>
+  </div>
+
+  <div class="setlabel"><h3>Original copy</h3><span class="eyebrow">Ads 1A–1C</span></div>
+  <div class="ads">
+    <div class="adcard">
+      <div class="ad a1a">
+        <div class="txt"><p class="eb">For moms running a business and a home</p><p class="hl">Do you feel trapped choosing between your work and your family?</p><p class="sub">What if you could give both your best?</p></div>
+        <div class="photo" style="background-image:url({{img:lacey-kitchen}})"></div>
+        <div class="foot"><small>Reclaim your hours</small><span class="btn">Get the Free Calendar</span></div>
+      </div>
+      <div class="cap"><strong>1A · Kitchen editorial</strong><span class="kind brand">On-brand · photo</span></div>
+      <ul><li><b>Photo:</b> Lacey at the kitchen counter arranging greenery (home + calm), cropped to a tall right-hand strip.</li><li><b>Layout:</b> sand background, left text column, terracotta CTA bottom-left.</li><li><b>Why:</b> "work and home" shown in one frame, without a single cliché.</li></ul>
+    </div>
+    <div class="adcard">
+      <div class="ad a1b"><div class="in">
+        <p class="eb">For moms running a business and a home</p>
+        <p class="hl">Do you feel trapped choosing between your <i>work</i> and your <i>family</i>?</p>
+        <div class="row"><div style="display:grid;gap:3cqw"><p class="sub">What if you could give both your best?</p><span class="link">Get the Free Calendar</span></div><small>Free calendar<br>Reclaim 15 hours<br>of every week</small></div></div>
+      </div>
+      <div class="cap"><strong>1B · Teal statement</strong><span class="kind brand">On-brand · text only</span></div>
+      <ul><li><b>Layout:</b> full-bleed Deep Teal, headline as large as it fits, "work" and "family" in sand italic.</li><li><b>CTA:</b> her underlined italic link style instead of a button.</li><li><b>Why:</b> a dark, quiet square stands out among bright lifestyle posts.</li></ul>
+    </div>
+    <div class="adcard">
+      <div class="ad a1c">
+        <div class="clock"><p class="d">Tuesday, October 14</p><p class="t">3:14</p></div>
+        <div class="notes">
+          <div class="n"><span class="ic c">C</span><div><b>Calendar</b><span>Client strategy call · 3:15 PM</span></div><time>now</time></div>
+          <div class="n"><span class="ic s">S</span><div><b>School</b><span>Reminder: pickup today · 3:15 PM</span></div><time>now</time></div>
+        </div>
+        <div class="bottom"><p class="hl">Do you feel trapped choosing between your work and your family?</p><div class="row"><p class="sub">What if you could give both your best?</p><span class="btn">Get the Free Calendar</span></div></div>
+      </div>
+      <div class="cap"><strong>1C · Two notifications, one 3:15</strong><span class="kind stop">Scroll-stopper</span></div>
+      <ul><li><b>Idea:</b> a phone lock screen with two alerts for the same minute: a client call and school pickup. Every mom-founder has lived this exact second.</li><li><b>Why it stops:</b> it looks like a real phone, not an ad, and people stop to read notifications by reflex.</li><li><b>Build:</b> keep the iOS lock-screen layout, recolour the wallpaper to her teal and the app icons to her palette.</li></ul>
+    </div>
+  </div>
+
+  <div class="setlabel"><h3>Optimised copy</h3><span class="eyebrow">Ads 1D–1F</span></div>
+  <div class="ads">
+    <div class="adcard">
+      <div class="ad a1d">
+        <div class="photo" style="background-image:url({{img:lacey-wall}})"></div>
+        <p class="eb tagp">For moms running a business and a home</p>
+        <div class="panel"><p class="hl">Your business got your best today. Your family got <i>what was left.</i></p><div class="row"><p class="sub">There's a way to give both your best.</p><span class="btn">Get the Free Calendar</span></div></div>
+      </div>
+      <div class="cap"><strong>1D · Quiet portrait</strong><span class="kind brand">On-brand · photo</span></div>
+      <ul><li><b>Photo:</b> Lacey sitting against the sunlit white wall, looking off-frame. Thoughtful rather than smiling, to match the line.</li><li><b>Layout:</b> photo top 60%, sand panel below, "what was left" in terracotta italic.</li><li><b>Why:</b> an empathetic face plus a hard-hitting line reads as personal, not salesy.</li></ul>
+    </div>
+    <div class="adcard">
+      <div class="ad a1e"><div class="in">
+        <p class="eb">For moms running a business and a home</p>
+        <div class="big">Work.<br>Family.<br><span class="strike">Pick one.</span><br><span class="both">Give both your best.</span></div>
+        <div class="row"><p>The free calendar that gives you back 15 hours of every week.</p><span class="btn">Get the Free Calendar</span></div></div>
+      </div>
+      <div class="cap"><strong>1E · Pick one, crossed out</strong><span class="kind brand">On-brand · text only</span></div>
+      <ul><li><b>Copy for this layout:</b> a tighter cut of the alternate: "Work. Family. <s>Pick one.</s> Give both your best."</li><li><b>Detail:</b> a hand-drawn terracotta line through "Pick one." The answer is in italic terracotta.</li><li><b>Why:</b> six words, readable at thumbnail size, and the strike-through is the story.</li></ul>
+    </div>
+    <div class="adcard">
+      <div class="ad a1f">
+        <div class="rc">
+          <h4>Today</h4><p class="d">Receipt · Tue Oct 14</p>
+          <div class="li"><span>Client calls</span><span>4.0 h</span></div>
+          <div class="li"><span>Inbox</span><span>2.5 h</span></div>
+          <div class="li"><span>Admin</span><span>2.0 h</span></div>
+          <div class="li"><span>School run</span><span>1.0 h</span></div>
+          <div class="li"><span>Dinner + bath</span><span>1.5 h</span></div>
+          <div class="li"><span>Laptop after bedtime</span><span>2.0 h</span></div>
+          <div class="li you"><span>You</span><span>0.0 h</span></div>
+          <p class="msg">Your business got your best today. Your family got <i>what was left.</i></p>
+        </div>
+        <div class="band"><span class="lbl"><em>Reclaim your hours.</em>Free calendar · for moms in business</span><span class="go">Get the Free Calendar</span></div>
+      </div>
+      <div class="cap"><strong>1F · Today's receipt</strong><span class="kind stop">Scroll-stopper</span></div>
+      <ul><li><b>Idea:</b> a till receipt itemising her day, ending in "You · 0.0 h".</li><li><b>Why it stops:</b> a physical object on a dark field, slightly tilted. People read receipts line by line, which means time on the ad.</li><li><b>Build:</b> paper texture and a real zig-zag tear. Montserrat caps for the line items, serif for the message. The hours are illustrative, not a claim.</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COPY 2 ================= -->
+<section id="copy2">
+  <span class="eyebrow">05 · Copy 2 of 3</span>
+  <h2>Women founders who live in their inbox</h2>
+  <div class="copycmp">
+    <div class="copycard"><span class="tag orig">Original (from the copy doc)</span><dl>
+      <dt>Eyebrow</dt><dd>For women founders</dd>
+      <dt>Headline</dt><dd>Do you feel like you live in your inbox 24 hours a day?</dd>
+      <dt>Sub</dt><dd>What if you only had to check it three times a day?</dd>
+      <dt>CTA</dt><dd>Get the Free Calendar and Find Out How <span style="color:var(--muted)">(stray "?" removed)</span></dd></dl></div>
+    <div class="copycard"><span class="tag alt">Optimised alternate</span><dl>
+      <dt>Eyebrow</dt><dd>For women founders</dd>
+      <dt>Headline</dt><dd>You didn't start a business to answer email all day.</dd>
+      <dt>Sub</dt><dd>Check it three times a day. The free calendar shows you how.</dd>
+      <dt>CTA</dt><dd>Get the Free Calendar</dd></dl>
+      <p class="why"><b>Why:</b> "three times a day" is the most concrete promise in the whole doc, so it moves up and becomes a statement instead of a "what if". The headline speaks to why she started the business, which hits harder than the inbox feeling. The CTA goes from 7 words to 4.</p></div>
+  </div>
+
+  <div class="setlabel"><h3>Original copy</h3><span class="eyebrow">Ads 2A–2C</span></div>
+  <div class="ads">
+    <div class="adcard">
+      <div class="ad a2a">
+        <div class="top"><p class="eb">For women founders</p><p class="hl">Do you feel like you live in your inbox 24 hours a day?</p></div>
+        <div class="icon"><div class="env"></div><span class="badge">247</span></div>
+        <p class="sub">What if you only had to check it three times a day?</p>
+        <div class="band"><span class="lbl">Free calendar<em>Reclaim 15 Hours of Every Week</em></span><span class="btn">Get the Free Calendar</span></div>
+      </div>
+      <div class="cap"><strong>2A · The unread badge</strong><span class="kind brand">On-brand · graphic</span></div>
+      <ul><li><b>From the copy doc:</b> your team's pick, built to the brief, with two brand fixes: a teal band instead of brown, and the badge in terracotta.</li><li><b>A/B test:</b> run a second version with an iOS-red badge (#FF3B30). Red is off-palette, but it's the colour the eye is trained to see.</li><li><b>Why:</b> the picture is the headline. You get it in half a second.</li></ul>
+    </div>
+    <div class="adcard">
+      <div class="ad a2b">
+        <div class="photo" style="background-image:url({{img:laptop-rattan}})"></div>
+        <p class="eb">For women founders</p>
+        <div class="txt"><p class="hl">Do you feel like you live in your inbox 24 hours a day?</p><div class="row"><p class="sub">What if you only had to check it three times a day?</p><span class="btn">Find Out How</span></div></div>
+      </div>
+      <div class="cap"><strong>2B · The laptop</strong><span class="kind brand">On-brand · photo</span></div>
+      <ul><li><b>Photo:</b> her flat-lay of the closed laptop on rattan. Calm, and the laptop is shut, which is the promise.</li><li><b>Layout:</b> photo fades into Deep Teal; white headline, sand sub.</li><li><b>Why:</b> the softest ad in the set. Use it for retargeting warm audiences who already know her.</li></ul>
+    </div>
+    <div class="adcard">
+      <div class="ad a2c">
+        <p class="q">Do you feel like you live in your inbox 24 hours a day?</p>
+        <div class="mail">
+          <div class="bar"><i></i><i></i><i></i></div>
+          <div class="fld"><span>To</span>Everyone</div>
+          <div class="fld"><span>Subject</span><span class="subj" style="width:auto;color:#1d1d1f">Out of office (permanently)</span></div>
+          <div class="body"><p>Hi! I've stopped living in my inbox.</p><p>I now check email three times a day:</p><div class="times"><b>9:00</b><b>1:00</b><b>4:00</b></div><p>Anything urgent can wait three hours. It always could.</p><p class="sig">A founder who got her day back</p></div>
+        </div>
+        <div class="band"><span class="sub">What if you only checked it three times a day?</span><span class="btn">Get the Free Calendar</span></div>
+      </div>
+      <div class="cap"><strong>2C · Out of office, permanently</strong><span class="kind stop">Scroll-stopper</span></div>
+      <ul><li><b>Idea:</b> a realistic email draft, an auto-reply she'd love to send, that lays out the three-times-a-day rhythm.</li><li><b>Why it stops:</b> a white email UI looks nothing like an ad, and "Out of office (permanently)" is a fantasy she'll pause on.</li><li><b>Build:</b> a neutral, generic mail-app look (not Gmail- or Apple-branded); brand colour only on the time chips, signature and band.</li></ul>
+    </div>
+  </div>
+
+  <div class="setlabel"><h3>Optimised copy</h3><span class="eyebrow">Ads 2D–2F</span></div>
+  <div class="ads">
+    <div class="adcard">
+      <div class="ad a2d"><div class="in">
+        <div class="times"><div>9:00<small>Inbox</small></div><div>1:00<small>Inbox</small></div><div>4:00<small>Inbox</small></div></div>
+        <div class="right"><p class="eb">For women founders</p><p class="hl">You didn't start a business to answer email all day.</p><div style="display:grid;gap:3cqw"><p class="sub">Check it three times a day. The free calendar shows you how.</p><span class="link">Get the Free Calendar</span></div></div></div>
+      </div>
+      <div class="cap"><strong>2D · Three times</strong><span class="kind brand">On-brand · text only</span></div>
+      <ul><li><b>Layout:</b> three big sand numerals down the left, like a schedule. Headline on the right.</li><li><b>Detail:</b> a thin sand rule between the columns, like her section dividers.</li><li><b>Why:</b> the numbers make the promise concrete before she reads a word.</li></ul>
+    </div>
+    <div class="adcard">
+      <div class="ad a2e">
+        <div class="circ"></div>
+        <div class="photo" style="background-image:url({{img:lacey-chair}})"></div>
+        <p class="eb">For women founders</p>
+        <div class="txt"><p class="hl">You didn't start a business to answer <i>email</i> all day.</p><div class="row"><p class="sub">Check it three times a day. The free calendar shows you how.</p><span class="btn">Get the Free Calendar</span></div></div>
+      </div>
+      <div class="cap"><strong>2E · Rust chair, glow circle</strong><span class="kind brand">On-brand · photo</span></div>
+      <ul><li><b>Photo:</b> Lacey laughing on the rust velvet chair with a notebook, cropped into a circle.</li><li><b>Detail:</b> the circle sits on the sand-to-white glow circle from her logo, so it reads as her brand.</li><li><b>Why:</b> her face plus joy. It shows the "after" feeling without a before/after.</li></ul>
+    </div>
+    <div class="adcard">
+      <div class="ad a2f">
+        <p class="hl">You didn't start a business to answer email all day.</p>
+        <div class="lap"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="base"></div>
+        <div class="note">Inbox closed.<br>Back at 1:00.<br>— L</div>
+        <div class="foot"><p class="sub">Check it three times a day.</p><span class="btn">Get the Free Calendar</span></div>
+      </div>
+      <div class="cap"><strong>2F · The sticky note</strong><span class="kind stop">Scroll-stopper</span></div>
+      <ul><li><b>Idea:</b> a laptop with a handwritten sticky note on the screen: "Inbox closed. Back at 1:00."</li><li><b>Why it stops:</b> full-bleed terracotta is the loudest colour she owns, and a handwritten note feels human in a feed of polished ads.</li><li><b>Build:</b> flat illustration as shown, or better, ask Lacey for a phone photo of a real sticky note on her own laptop. That's her photo, not stock.</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COPY 3 ================= -->
+<section id="copy3">
+  <span class="eyebrow">06 · Copy 3 of 3</span>
+  <h2>Women whose business runs through them</h2>
+  <div class="copycmp">
+    <div class="copycard"><span class="tag orig">Original (from the copy doc)</span><dl>
+      <dt>Eyebrow</dt><dd>For women whose business runs through them</dd>
+      <dt>Headline</dt><dd>What if more clients didn't mean more hours?</dd>
+      <dt>Sub</dt><dd>Does every new client take another slot on an already full calendar?</dd>
+      <dt>CTA</dt><dd>Reclaim Your Hours. Get the Free Calendar.</dd></dl>
+      <p class="why">The doc labels both lines "headline". I've treated the second as the subheadline, matching the pattern of Copies 1 and 2.</p></div>
+    <div class="copycard"><span class="tag alt">Optimised alternate</span><dl>
+      <dt>Eyebrow</dt><dd>For women whose business runs through them</dd>
+      <dt>Headline</dt><dd>Your business is growing. Your life shouldn't shrink to fit it.</dd>
+      <dt>Sub</dt><dd>What if more clients didn't mean more hours?</dd>
+      <dt>CTA</dt><dd>Get the Free Calendar</dd></dl>
+      <p class="why"><b>Why:</b> the original opens with the solution and puts the pain second. The alternate flips that, so the pain lands first and the "what if" answers it. It also frames growth as good news, which suits a successful founder better than "already full calendar".</p></div>
+  </div>
+
+  <div class="setlabel"><h3>Original copy</h3><span class="eyebrow">Ads 3A–3C</span></div>
+  <div class="ads">
+    <div class="adcard">
+      <div class="ad a3a">
+        <p class="eb">For women whose business runs through them</p>
+        <div class="photo" style="background-image:url({{img:planner}})"></div>
+        <span class="num">1.</span>
+        <div class="txt"><p class="hl">What if more clients didn't mean more hours?</p><div class="row"><p class="sub">Does every new client take another slot on an already full calendar?</p><span class="btn">Get the Free Calendar</span></div></div>
+      </div>
+      <div class="cap"><strong>3A · The planner</strong><span class="kind brand">On-brand · photo</span></div>
+      <ul><li><b>Photo:</b> her open spiral planner in soft light, the calendar itself.</li><li><b>Detail:</b> borrows her terracotta "1." section numeral from the Rise Higher block.</li><li><b>Why:</b> the photo previews the lead magnet without showing it.</li></ul>
+    </div>
+    <div class="adcard">
+      <div class="ad a3b"><div class="in">
+        <p class="eb">For women whose business runs through them</p>
+        <div class="eq"><span>More clients</span><b>≠</b><span>More hours</span></div>
+        <div style="display:grid;gap:3cqw"><p class="hl">What if more clients didn't mean more hours?</p><div class="row"><p class="sub">Does every new client take another slot on an already full calendar?</p><span class="btn">Get the Free Calendar</span></div></div></div>
+      </div>
+      <div class="cap"><strong>3B · Not equal</strong><span class="kind brand">On-brand · text only</span></div>
+      <ul><li><b>Layout:</b> white canvas, a huge terracotta "≠" between "More clients" and "More hours".</li><li><b>Why:</b> one symbol carries the whole idea and reads at thumbnail size.</li><li><b>Watch:</b> the ≠ must be drawn in the display serif, not a system font.</li></ul>
+    </div>
+    <div class="adcard">
+      <div class="ad a3c">
+        <p class="q">Does every new client take another slot on an already full calendar?</p>
+        <div class="cal">
+          <div></div><div class="dh">MON</div><div class="dh">TUE</div><div class="dh">WED</div><div class="dh">THU</div><div class="dh">FRI</div>
+          <div class="hrs"><span>9</span><span>10</span><span>11</span><span>12</span><span>1</span><span>2</span><span>3</span><span>4</span></div>
+          <div class="col"><div class="ev t" style="grid-row:span 2">Client call</div><div class="ev s">Inbox</div><div class="ev r" style="grid-row:span 2">Delivery</div><div class="ev t">Client call</div><div class="ev s">Admin</div><div class="ev r">School run</div></div>
+          <div class="col"><div class="ev s">Inbox</div><div class="ev t" style="grid-row:span 3">Client intensive</div><div class="ev s">Proposals</div><div class="ev t">Client call</div><div class="ev s">Inbox</div><div class="ev r">School run</div></div>
+          <div class="col"><div class="ev t" style="grid-row:span 2">Client call</div><div class="ev r">Delivery</div><div class="ev s">Inbox</div><div class="ev t" style="grid-row:span 2">Client call</div><div class="ev s">Invoices</div><div class="ev r">School run</div></div>
+          <div class="col"><div class="ev s">Inbox</div><div class="ev t">Client call</div><div class="ev r" style="grid-row:span 2">Delivery</div><div class="ev t">Client call</div><div class="ev s">Content</div><div class="ev t">Client call</div><div class="ev r">School run</div></div>
+          <div class="col"><div class="ev t" style="grid-row:span 2">Client call</div><div class="ev s">Inbox</div><div class="ev t">Client call</div><div class="ev r" style="grid-row:span 2">Delivery</div><div class="ev s">Admin</div><div class="ev r">School run</div></div>
+        </div>
+        <div class="drag">+ New client<small>Conflicts with 4 events</small></div>
+        <div class="band"><span class="sub">What if more clients didn't mean more hours?</span><span class="btn">Get the Free Calendar</span></div>
+      </div>
+      <div class="cap"><strong>3C · No room</strong><span class="kind stop">Scroll-stopper</span></div>
+      <ul><li><b>Idea:</b> a fully booked week, with a "New client" event being dragged in and a conflict warning. Good news that feels like a problem.</li><li><b>Why it stops:</b> a dense, familiar calendar UI breaks the pattern of airy lifestyle squares, and the tilted dashed block draws the eye.</li><li><b>Build:</b> keep it generic (not Google- or Apple-branded); events in teal, sand and a pale terracotta tint.</li></ul>
+    </div>
+  </div>
+
+  <div class="setlabel"><h3>Optimised copy</h3><span class="eyebrow">Ads 3D–3F</span></div>
+  <div class="ads">
+    <div class="adcard">
+      <div class="ad a3d">
+        <div class="photo" style="background-image:url({{img:incense-desk}})"></div>
+        <div class="txt"><p class="eb">For women whose business runs through them</p><div><p class="hl">Your business is growing. Your life shouldn't <i>shrink to fit it.</i></p><p class="sub">What if more clients didn't mean more hours?</p></div><span class="btn">Get the Free Calendar</span></div>
+      </div>
+      <div class="cap"><strong>3D · The quiet desk</strong><span class="kind brand">On-brand · photo</span></div>
+      <ul><li><b>Photo:</b> incense smoke curling beside a laptop, from her "Let's Work Together" section. It's work, but unhurried.</li><li><b>Layout:</b> half teal text panel, half photo; "shrink to fit it" in sand italic.</li><li><b>Why:</b> the calmest image in her library, paired with the sharpest line.</li></ul>
+    </div>
+    <div class="adcard">
+      <div class="ad a3e"><div class="in">
+        <p class="eb">For women whose business runs through them</p>
+        <div class="rows"><div class="r up"><span>Clients</span><b>↑</b></div><div class="r dn"><span>Hours</span><b>↓</b></div></div>
+        <div style="display:grid;gap:3cqw"><p class="hl">Your business is growing. Your life shouldn't shrink to fit it.</p><div class="row"><span class="link" style="color:var(--sand)">Get the Free Calendar</span><span class="eb" style="font-size:1.9cqw;color:var(--sand);opacity:.8;text-align:right">Free calendar<br>Reclaim 15 hours</span></div></div></div>
+      </div>
+      <div class="cap"><strong>3E · Up and down</strong><span class="kind brand">On-brand · text only</span></div>
+      <ul><li><b>Layout:</b> two rows like a scoreboard: "Clients ↑" in sand, "Hours ↓" in terracotta.</li><li><b>Why:</b> the whole promise in two words and two arrows, understood before the headline.</li><li><b>Note:</b> draw the arrows in the serif or as simple strokes, not emoji.</li></ul>
+    </div>
+    <div class="adcard">
+      <div class="ad a3f"><div class="in">
+        <p class="eb">For women whose business runs through them</p>
+        <div><p class="huge">Your business is growing.</p><p class="tiny"><b>Your life shouldn't shrink to fit it.</b><span class="sc">← this one</span></p></div>
+        <div class="row"><p class="sub">What if more clients didn't mean more hours?</p><span class="btn">Get the Free Calendar</span></div></div>
+      </div>
+      <div class="cap"><strong>3F · The tiny line</strong><span class="kind stop">Scroll-stopper</span></div>
+      <ul><li><b>Idea:</b> "Your business is growing." fills the square. "Your life shouldn't shrink to fit it." is set tiny, about 20 px, with a handwritten "← this one".</li><li><b>Why it stops:</b> the type does what the copy says. People zoom in or lean in to read the small line, and that's the point.</li><li><b>Build:</b> keep the tiny line at about 20 px or larger so it's still legible in-feed.</li></ul>
+    </div>
+  </div>
+</section>
+
+<section id="next">
+  <span class="eyebrow">07 · Before the designer starts</span>
+  <h2>Open items</h2>
+  <div class="prose">
+    <ul>
+      <li><b>Confirm the display serif's name</b> on laceynewman.com (WhatFont), and get the font file or licence so the ads match the site exactly.</li>
+      <li><b>Get full-resolution photos</b> from Lacey's brand shoot. The mock-ups use low-resolution crops from screenshots.</li>
+      <li><b>Check the landing page</b> (go.laceynewman.com/reclaim-15-hours) matches the ads: same "Reclaim 15 Hours" name, same colours, and a calendar preview image if possible. The page couldn't be loaded from my side.</li>
+      <li><b>Test order:</b> launch 2A (badge), 1C (lock screen) and 3B (≠) first; they're the fastest to read. Then rotate in the rest.</li>
+      <li><b>Mock-up type is a stand-in.</b> Line breaks and sizes will shift slightly once the real display font is in.</li>
+    </ul>
+  </div>
+</section>
+
+</div>
