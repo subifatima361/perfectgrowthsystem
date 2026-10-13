@@ -9,13 +9,19 @@ Six ads (1A, 1D, 2B, 2E, 3A, 3D) have a hatched **IMAGE SLOT** in the PNG. Each 
 3. **Read every piece of text in the image.** If a word comes out wrong, reply with the matching fix line under that prompt. ChatGPT edits the same image instead of starting over.
 4. **Crop to the slot size** and place it in the ad.
 
+## Struggle vs balance (for A/B testing)
+
+- **Struggle** (the pain), on the three original-copy ads: **1A, 2B, 3A**.
+- **Balance** (the promise), on the three optimised-copy ads: **1D, 2E, 3D**.
+- **Kids and home life** appear in **1A, 1D and 3D**. The other three stay focused on her alone, so the set doesn't feel repetitive.
+
 ## The recurring woman
 
 The same woman appears in every image, so the campaign feels like one story: **late 30s, shoulder-length auburn bob, light freckles, small gold hoop earrings**. She is deliberately unlike Lacey (who has long, dark, wavy hair), so no one mistakes her for Lacey. If one image changes her look, reply: *"Keep everything else, but make the woman match this: late 30s, shoulder-length auburn bob, light freckles, small gold hoop earrings."*
 
 ---
 
-## 1A · Kitchen editorial
+## 1A · Kitchen editorial (STRUGGLE)
 
 **Headline it must show:** "Do you feel trapped choosing between your work and your family?"
 **Slot:** 410 × 1080 px, a tall narrow strip on the right of the ad.
@@ -40,30 +46,30 @@ Light and colour: soft natural daylight from a window on the left. Palette of wa
 
 ---
 
-## 1D · Quiet portrait → "What was left"
+## 1D · After school, both at once (BALANCE)
 
-**Headline it must show:** "Your business got your best today. Your family got what was left."
+**Headline it answers:** "Your business got your best today. Your family got what was left." Sub: "There's a way to give both your best." The image shows the "both" in the sub.
 **Slot:** 1080 × 605 px, a wide band across the top of the ad.
 **ChatGPT size:** Landscape (1536 × 1024).
 
 ```
-Create a photorealistic wide photo, shot like a candid editorial lifestyle image.
+Create a photorealistic wide photo, shot like a warm, candid editorial lifestyle image.
 
-Scene: a family kitchen at night. A woman in her late 30s with a shoulder-length auburn bob, light freckles and small gold hoop earrings sits at a wooden kitchen table, still working. Her face is lit blue-white by her open laptop. She looks exhausted and still focused, typing. Her cardigan is cream.
+Scene: a sunny family kitchen at 3:30 in the afternoon, right after school. A woman in her late 30s with a shoulder-length auburn bob, light freckles and small gold hoop earrings sits at a long wooden kitchen table. She is relaxed and smiling, leaning over to help her son, about 7, with his homework. She is pointing at his maths worksheet and he is grinning up at her. Her daughter, about 5, sits across the table colouring a picture, with a plate of apple slices between them. School backpacks hang on the chairs.
 
-In the doorway on the right side of the frame, her son, about 6, stands in dinosaur pyjamas holding a picture book against his chest, waiting for her. The book cover clearly reads "Bedtime Stories". He is in soft shadow, patient and a little sad. She has not noticed him yet.
+Her work is right there too, calm and under control: an open laptop sits at her elbow, pushed slightly aside. The laptop screen is clearly visible and shows a weekly calendar app with a highlighted afternoon block that reads "3:00–5:00 · Kids · No meetings" in a soft terracotta colour. A wall clock behind them reads 3:30.
 
-On the table next to the laptop: a plate with a cold, half-eaten dinner and a mug. On the oven behind her, the green digital clock clearly reads 9:42.
+The feeling: she is fully present with her kids AND her business is handled. No stress, no rushing.
 
-Composition: the woman and laptop in the left third, the boy in the doorway in the right third, empty floor between them, so the distance between them tells the story. Keep everything important in the upper two thirds; the bottom of the image will sit close to a text panel.
+Composition: wide. The mother and son in the left half, the daughter on the right, the laptop between them at the front edge of the table so its screen is readable. Keep faces and the laptop screen in the upper two thirds; the bottom of the image will sit close to a text panel.
 
-Light and colour: dark, warm evening. The only light is the cool laptop glow on her face and a warm hallway light behind the boy. Palette of cream, sand beige and deep teal shadows, with a terracotta mug. No logos on the laptop (show the back of the laptop lid, plain). No other text in the image.
+Light and colour: warm afternoon sun from a window on the left. Palette of warm white, cream and sand beige, with terracotta (the daughter's top, the calendar block) and deep teal (the son's sweater). No logos on the laptop. No other text besides the calendar block, the worksheet and the clock.
 ```
-**Fix line if needed:** *"Keep everything, but make the book cover clearly say Bedtime Stories and the oven clock clearly read 9:42."*
+**Fix line if needed:** *"Keep everything, but make the laptop screen larger and the calendar block clearly read 3:00–5:00 · Kids · No meetings."*
 
 ---
 
-## 2B · The laptop → living in the inbox
+## 2B · The laptop → living in the inbox (STRUGGLE)
 
 **Headline it must show:** "Do you feel like you live in your inbox 24 hours a day?"
 **Slot:** 1080 × 648 px, the top 60% of the ad; the bottom of the image fades into teal under the headline.
@@ -88,7 +94,7 @@ Light and colour: dark room, cool phone glow on her face, a warm dim lamp. Palet
 
 ---
 
-## 2E · Rust chair, glow circle → the "after"
+## 2E · Rust chair, glow circle → the "after" (BALANCE)
 
 **Headline it must show:** "You didn't start a business to answer email all day." (Sub: "Check it three times a day.")
 **Slot:** 583 × 583 px, cropped to a **circle**.
@@ -112,7 +118,7 @@ Light and colour: warm afternoon window light from the left. Palette of terracot
 
 ---
 
-## 3A · The planner → no room for a new client
+## 3A · The planner → no room for a new client (STRUGGLE)
 
 **Headline it must show:** "What if more clients didn't mean more hours?" (Sub: "Does every new client take another slot on an already full calendar?")
 **Slot:** 475 × 562 px, portrait, top right of the ad. A terracotta "1." overlaps its top-right corner, so keep that corner empty.
@@ -136,26 +142,24 @@ Light and colour: soft morning daylight from the left with gentle shadows. Palet
 
 ---
 
-## 3D · The quiet desk → business grows, life shrinks
+## 3D · Logging off at 5 (BALANCE)
 
-**Headline it must show:** "Your business is growing. Your life shouldn't shrink to fit it." (Sub: "What if more clients didn't mean more hours?")
+**Headline it answers:** "Your business is growing. Your life shouldn't shrink to fit it." Sub: "What if more clients didn't mean more hours?" The image shows growth and family life side by side.
 **Slot:** 518 × 1080 px, a tall strip on the right half of the ad.
 **ChatGPT size:** Portrait (1024 × 1536).
 
 ```
-Create a photorealistic vertical photo, shot like an editorial lifestyle image.
+Create a photorealistic vertical photo, shot like a warm, candid editorial lifestyle image.
 
-Scene: a home office late at night. A woman in her late 30s with a shoulder-length auburn bob and small gold hoop earrings is seen from behind and slightly to the side, sitting at a light oak desk, working on a laptop. It is dark outside the window.
+Scene: a bright home office corner at 5:00 in the evening, golden light. A woman in her late 30s with a shoulder-length auburn bob, light freckles and small gold hoop earrings is standing up from her light oak desk, laughing, as her daughter, about 6, in a terracotta raincoat and rain boots, pulls her by the hand toward the door. The daughter holds a small scooter helmet in her other hand. They are clearly heading outside together.
 
-The laptop screen is clearly visible and legible. It shows a simple business dashboard with a big green line chart going steeply up, and a large heading reading "New clients this month: 12 ↑".
+On the desk, the laptop is still open and clearly legible. It shows a simple business dashboard with a green line chart going steeply up and a large heading reading "New clients this month: 12 ↑". Stuck to the bottom edge of the laptop screen is a pale yellow sticky note in neat handwriting reading "Done at 5 ✓".
 
-Pinned on the wall above the desk is a paper monthly calendar. Several personal plans on it are crossed out in red pen, and the words are still legible under the lines: "Yoga", "Date night", "Mom's birthday dinner", "Book club". Next to the laptop, her phone lies face up showing a notification that reads: "Sarah: Are you still coming Saturday?"
+Composition: tall and narrow. Mother and daughter in the upper two thirds (faces near the top third), the desk and the laptop with the chart and sticky note in the lower third. Keep everything in the central 60% of the width, because the sides will be cropped.
 
-Composition: tall and narrow. The wall calendar with crossed-out plans in the upper part of the frame, the glowing laptop with the rising chart in the middle, the phone notification on the desk in the lower part. Keep all of it in the central 60% of the width, because the sides will be cropped.
-
-Light and colour: dark room, the laptop as the main light source, a warm desk lamp. Palette of warm oak, cream and sand beige, deep teal night outside the window, terracotta lampshade. No logos on the laptop or phone. No other text.
+Light and colour: warm golden-hour sunlight from a window behind them. Palette of warm oak, cream and sand beige, with terracotta (the raincoat) and deep teal (a cardigan over the chair). No logos on the laptop. No other text besides the dashboard heading and the sticky note.
 ```
-**Fix line if needed:** *"Keep everything, but make the laptop heading clearly read New clients this month: 12 ↑ and make the crossed-out words on the calendar legible."*
+**Fix line if needed:** *"Keep everything, but make the laptop heading clearly read New clients this month: 12 ↑ and the sticky note read Done at 5 ✓."*
 
 ---
 
