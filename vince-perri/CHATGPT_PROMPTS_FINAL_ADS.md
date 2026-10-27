@@ -1,167 +1,69 @@
-# Vince Perri – Operations Manager Guide: final ChatGPT prompts (11 ads)
+# Vince Perri – Operations Manager Guide: ChatGPT prompts (11 ads, original concepts and full copy)
 
-Every prompt is self-contained. Before pasting a prompt, upload the photo(s) it names (from the "vince analysis" Drive folder).
-
-Rules used in every ad:
-- One idea per ad, headline of 10 words or fewer, at most about 20 words of text on the image. The rest of the message goes in the Meta primary text.
-- Real photo of Vince, unchanged. Only the background is edited.
-- Navy, off-white and one yellow accent on 1–3 words. Gold appears only as a small detail.
-- Lots of empty space, 80px margins, readable on a phone.
-
-If a word comes out wrong, reply: "Keep everything identical. Only fix the text so it reads exactly: …"
-For the sharpest result, add Vince's logo afterwards in Canva. Don't ask ChatGPT to draw the logo.
+Each prompt keeps the original mock-up's concept and all of its text. Only the layout is cleaned up.
+Upload the photo(s) named above each prompt to ChatGPT, then paste the prompt.
+Photos are in the "vince analysis" Drive folder.
 
 ---
 
-## 1. Incoming call – upload `Vinnce Perri-121.jpg`
+**Ad 1 – Incoming call** · Upload: `Vinnce Perri-121.jpg`
 ```
-Create a premium, minimal square 1:1 (1080x1080) Meta ad.
-
-PHOTO: Use the attached photo of Vince Perri as the hero. Keep his face, hair, beard, expression, body and clothes exactly as photographed. Do not redraw, retouch or change him. Only crop, blur, darken or recolour the background.
-
-LAYOUT: Vince fills the right 60% of the frame, cropped from mid-chest up, looking straight at the camera. Replace the background with a softly blurred, deep navy (#0B1033) evening office. The left side is calm, dark negative space.
-- Top left: one realistic iPhone incoming-call notification card (frosted white glass, rounded corners, small green phone icon) with two lines: "Operations Manager" (bold) and "Incoming call".
-- Bottom left: headline in white, Manrope ExtraBold, ~60px, two lines: "You can't scale your business doing $10 tasks." Make only "$10 tasks." yellow (#FFDE6A).
-- Under the headline: a small yellow (#FFDE6A) rounded pill button with navy text: "Get the Free Guide →"
-
-STYLE: premium editorial, high contrast, lots of breathing room, 80px margins, at most 2 fonts (Manrope ExtraBold, Inter). Yellow on the accent words only. No other text, no icons, no logos, no watermarks. Spell every word exactly as written.
+Create a premium square 1:1 (1080x1080) Meta ad. Use the attached photo of Vince Perri. Keep his face, hair, beard, expression, body and clothes exactly as photographed. Do not redraw, retouch or change him. Only extend, blur or relight the background. TOP 60% OF THE FRAME: Vince from mid-chest up, centred, in front of a softly blurred evening city office with warm lights, graded toward deep navy (#000924). Over his chest area (never covering his face), a realistic iPhone notification card (frosted off-white glass, rounded corners, soft shadow, green phone icon on the left) with three lines: small grey caps "INCOMING CALL" with "now" on the right; bold "Operations Manager"; and in quotes "I've got the $10 tasks. Go run your business." BOTTOM 40%: the photo fades smoothly into solid deep navy (#000924). On it, left-aligned: a white headline in Manrope ExtraBold, about 62px, two lines: "You can't scale your business doing $10 tasks." with only "$10 tasks." in gold (#D8B878). Below it, in Inter about 28px, light grey-white: "Every one of them is an operations manager's job. Right now, that's you." Below that, a rounded pill button with a soft gold gradient (#B48C45 to #D8B878) and navy text, about 28px: "Get the free Operations Manager Guide →". LAYOUT TWEAKS: clear hierarchy (headline biggest, then subline, then button), 70px side margins, even spacing between the three text elements. Style: premium, high contrast, uncluttered. No other text, no logos, no watermarks. Spell every word exactly as written.
 ```
 
-## 2. Notes app – upload `Vinnce Perri-6.jpg`
+**Ad 2 – Notes app** · Upload: `Vinnce Perri-6.jpg`
 ```
-Create a premium, minimal square 1:1 (1080x1080) Meta ad.
-
-PHOTO: Use the attached photo of Vince Perri (seated on the stairs, looking to the side). Keep his face, hair, beard, expression, body and clothes exactly as photographed. Do not redraw or retouch him. Only crop, soften or brighten the background.
-
-LAYOUT: Vince takes up the right half of the frame, bright and airy. On the left half, a realistic iPhone showing the Notes app (white screen, soft shadow, tilted about 3 degrees), so it looks as if he is thinking about the list.
-- Notes title, bold: "$10 tasks that came back to me"
-- Three items with empty yellow circles: "Approve the schedule", "Answer the same question", "Redo the job"
-- At the bottom of the frame, a slim deep navy (#0B1033) bar with bold white text on the left: "Right now, that's you." and a small yellow (#FFDE6A) pill button on the right with navy text: "Get the Free Guide →"
-
-STYLE: clean, premium, warm off-white (#F6F4EF) tones, lots of space, 80px margins, Manrope + Inter only. No other text, no logos, no watermarks. Spell every word exactly as written.
+Create a premium square 1:1 (1080x1080) Meta ad. Use the attached photo of Vince Perri (seated on the stairs, looking to the side, thoughtful). Keep his face, hair, beard, expression, body and clothes exactly as photographed. Do not redraw or retouch him. Only crop or soften the background. BACKGROUND: warm off-white (#EDEAE2). RIGHT 45% OF THE FRAME: Vince, cropped from the waist up, looking toward the phone, with his photo fading softly into the off-white on its left edge. LEFT 55%: a realistic white iPhone Notes screen (rounded corners, soft navy shadow, tilted about 2 degrees). At the top of the screen, small yellow-orange "‹ Notes" on the left and "Done" on the right. Bold title, about 40px: "$10 tasks that came back to me this week". Small grey date: "Friday, 9:47 PM". Then a list with an empty yellow circle before each item and thin grey dividers: "Approve the schedule change (again)" / "Answer "where's that invoice?"" / "Redo the job that came back wrong" / "Chase the supplier on the order" / "Reply to 43 "quick questions"" / "Work on growing the business" (this last item crossed out with a red line). BOTTOM: a full-width navy (#090C55) bar, about 170px tall, with white bold text on the left, about 32px: "You can't scale your business doing $10 tasks." ("$10 tasks." in yellow #FFDE6A), and on the right a yellow (#FFDE6A) rounded pill button with navy text: "Get the Free Guide →". LAYOUT TWEAKS: keep the phone fully inside the frame with 60px margins, text on the phone readable on mobile, and do not let the phone cover Vince's face. Style: premium, clean, native-looking. No other text, no logos, no watermarks. Spell every word exactly as written.
 ```
 
-## 3. Out of office – upload `Vinnce Perri-45.jpg`
+**Ad 3 – Out of office** · Upload: `Vinnce Perri-45.jpg`
 ```
-Create a premium, minimal square 1:1 (1080x1080) Meta ad.
-
-PHOTO: Use the attached photo of Vince Perri (seated in the chair, smiling). Keep his face, hair, beard, expression, body and clothes exactly as photographed. Do not redraw or retouch him. Only extend or tidy the bright white background.
-
-LAYOUT: Vince sits centre-right in the top 70% of the frame, relaxed, in a bright minimal room.
-- Top left: one small, realistic email auto-reply card (white, soft shadow) with a bold line "Out of office" and a grey line "Back Monday".
-- The bottom 30% is a solid deep navy (#0B1033) band. In it, a white headline in Manrope ExtraBold, ~54px, two lines: "Your business takes a vacation every time you do." Make only "every time you do." yellow (#FFDE6A).
-- A small yellow pill button under it, navy text: "Get the Free Guide →"
-
-STYLE: premium, calm, high contrast, 80px margins. No other text, no logos, no watermarks. Spell every word exactly as written.
+Create a premium square 1:1 (1080x1080) Meta ad. Use the attached photo of Vince Perri (seated in the chair, smiling). Keep his face, hair, beard, expression, body and clothes exactly as photographed. Do not redraw or retouch him. Only extend or tidy the bright background. TOP 60% OF THE FRAME: the photo of Vince, relaxed and smiling, positioned on the LEFT side. On the RIGHT side, overlapping the photo but never his face, a realistic email window (white, rounded corners, soft shadow, light grey title bar with red, yellow and green dots and the title "Automatic Reply"). Inside the email: "From: Your Business"; "To: Every customer"; bold subject, about 28px: "Out of office until the owner is back"; body text, about 22px: "Thanks for reaching out! Nothing moves while they're away. Decisions, approvals and answers will resume on their return." BOTTOM 40%: a solid navy (#090C55) panel. Left-aligned in it: a white headline in Manrope ExtraBold, about 62px, two lines: "Your business takes a vacation every time you do." with only "every time you do." in yellow (#FFDE6A). Below it, in Inter about 28px, light lavender-white: "An operations manager keeps it moving while you're gone." Below that, a yellow (#FFDE6A) rounded pill button with navy text, about 28px: "Get the free Operations Manager Guide →". LAYOUT TWEAKS: 70px margins, clear spacing between headline, subline and button, and the email text sharp and readable. Style: premium, bright on top and rich navy below. No other text, no logos, no watermarks. Spell every word exactly as written.
 ```
 
-## 4. Editorial (serif + highlight) – upload `Vinnce Perri-27.jpg`
+**Ad 4 – Editorial gold** · Upload: `Vinnce Perri-6.jpg`
 ```
-Create a premium, minimal square 1:1 (1080x1080) Meta ad in the style of a business-magazine cover.
-
-PHOTO: Use the attached photo of Vince Perri (standing on the stairs). Keep his face, hair, beard, expression, body and clothes exactly as photographed. Do not redraw or retouch him. Crop so he takes up the right 45% of the frame, from head to knees, and keep the bright architectural background.
-
-LAYOUT: On the clean light wall on the left, a large serif headline (like Playfair Display Black) in deep navy (#0B1033), ~76px, four short lines: "You built a business that can't run without you." Put a yellow (#FFDE6A) highlighter swipe behind "can't run without you." only.
-- Bottom left: a small navy text link with an arrow, Inter SemiBold ~26px: "Get the free Operations Manager Guide →"
-
-STYLE: magazine editorial, lots of white space, strong contrast, 80px margins. No other text, no logos, no watermarks. Spell every word exactly as written.
+Create a premium square 1:1 (1080x1080) Meta ad in a dark editorial style. Use the attached photo of Vince Perri (on the glass staircase, looking to the side). Keep his face, hair, beard, expression, body and clothes exactly as photographed. Do not redraw or retouch him. Only crop, darken or recolour the background. TOP 60% OF THE FRAME: Vince's photo, cropped from the chest up and slightly right of centre, fading at the bottom into solid deep navy (#000924). Top left, over a subtle dark gradient: a small wordmark in spaced serif capitals, white: "VINCE PERRI". BOTTOM 40% on solid navy, left-aligned: a large serif headline (like Playfair Display Bold), about 76px, white, two lines: "You built a business" / "that can't run without you." The whole second line sits on a gold gradient highlight bar (#B48C45 to #D8B878 to #A8823C) with navy text. Below it, a short thin gold rule (about 120px wide). Below the rule, on one row: on the left, in Inter about 28px, off-white (#F0EDE6): "Because you're the owner and the operations manager."; on the right, a gold gradient rounded pill button with navy text: "Get the Free Guide →". LAYOUT TWEAKS: 70px margins, the headline as the clear focal point, and even spacing between the headline, rule and bottom row. Style: luxury editorial, high contrast, uncluttered. No other text, no logos, no watermarks. Spell every word exactly as written.
 ```
 
-## 5. Two business cards – upload `Vinnce Perri-82.jpg`
+**Ad 5 – Business cards** · Upload: `Vinnce Perri-45.jpg`
 ```
-Create a premium, minimal square 1:1 (1080x1080) Meta ad.
-
-PHOTO: Use the attached photo of Vince Perri (black shirt, looking to the side). Keep his face, hair, beard, expression, body and clothes exactly as photographed. Do not redraw or retouch him. Recolour only the background behind him to a warm, soft neutral.
-
-LAYOUT: Vince fills the left 50% of the frame. The right 50% is a deep navy (#0B1033) surface with two realistic business cards lying on it at slight angles, one partly over the other:
-- Top card, white: "YOUR NAME" (bold) and "Owner"
-- Bottom card, navy with a fine gold edge: "YOUR NAME" (white, bold) and "Operations Manager" (yellow #FFDE6A)
-- Above the cards, a white headline in Manrope ExtraBold, ~48px: "You built a business that can't run without you."
-- Below the cards, a small yellow pill button, navy text: "Get the Free Guide →"
-
-STYLE: premium, minimal, high contrast, 80px margins. No other text, no logos, no watermarks. Spell every word exactly as written.
+Create a premium square 1:1 (1080x1080) Meta ad. Use the attached photo of Vince Perri (smiling) only as a small circular portrait. Keep his face, hair, beard and expression exactly as photographed. Do not redraw or retouch him. BACKGROUND: warm off-white (#F6F4EF). TOP, left-aligned: a small gold (#C39D50) letter-spaced label in caps, about 22px: "FOR BUSINESS OWNERS OF $500K TO $2M". Below it, a navy (#090C55) headline in Manrope ExtraBold, about 62px, two lines: "You built a business that can't run without you." MIDDLE: two realistic business cards with soft shadows, overlapping at slight opposite angles. Card 1 (back, tilted left), white: bold navy "YOUR NAME"; grey "Owner"; a short yellow line; then small grey text: "Sets the vision · Grows the company · Builds enterprise value". Card 2 (front, tilted right, overlapping the lower right of card 1), navy (#090C55): bold white "YOUR NAME"; yellow (#FFDE6A) "Operations Manager"; a short yellow line; then small light text: "Approvals · Scheduling · Follow-ups · Fixing what comes back · Every $10 task". To the right of the cards: a circular portrait of Vince (about 240px, white border, soft shadow) with "Vince Perri" in bold navy and "M&A Advisor · CEPA®" in small grey underneath. BOTTOM: a full-width navy (#090C55) bar, about 160px tall, with white bold text on the left, about 30px: "Because you're the owner and the operations manager." ("and" in yellow), and on the right a yellow (#FFDE6A) pill button with navy text: "Get the Free Guide →". LAYOUT TWEAKS: no overlap between the cards and the portrait or caption, every line of text on both cards fully visible, 70px margins. Style: premium, clean. No other text, no logos, no watermarks. Spell every word exactly as written.
 ```
 
-## 6. Calendar – upload `Vinnce Perri-21.jpg`
+**Ad 6 – Calendar** · Upload: `Vinnce Perri-82.jpg`
 ```
-Create a premium, minimal square 1:1 (1080x1080) Meta ad.
-
-PHOTO: Use the attached photo of Vince Perri (hands in pockets, modern office). Keep his face, hair, beard, expression, body and clothes exactly as photographed. Do not redraw or retouch him. Only crop or soften the background.
-
-LAYOUT: Vince stands on the right, about 45% of the frame, from the waist up. Top, full width: a deep navy (#0B1033) headline in Manrope ExtraBold, ~56px, on a soft off-white (#F6F4EF) background: "You can't scale your business doing $10 tasks." Make only "$10 tasks." navy on a yellow (#FFDE6A) highlight.
-- Left side: one clean, realistic calendar day card (white, rounded, soft shadow) titled "Tuesday" with 5 coloured time blocks: "Approvals", "Team questions", "Chase invoice", "Fix rework", "Put out fires". The last block, at "9 PM", says "Grow the business" and is crossed out in red.
-- Bottom left: a small navy pill button, yellow text: "Get the Free Guide →"
-
-STYLE: clean SaaS-meets-editorial look, lots of space, 80px margins. No other text, no logos, no watermarks. Spell every word exactly as written.
+Create a premium square 1:1 (1080x1080) Meta ad. Use the attached photo of Vince Perri (black shirt, looking to the side). Keep his face, hair, beard, expression, body and clothes exactly as photographed. Do not redraw or retouch him. Only soften or neutralise the background. BACKGROUND: warm off-white (#F6F4EF). TOP, full width, left-aligned: a navy (#090C55) headline in Manrope ExtraBold, about 62px, two lines: "You can't scale your business doing $10 tasks." with "$10 tasks." on a yellow (#FFDE6A) highlight. MIDDLE LEFT (about 60% width): a clean white calendar card (rounded corners, soft shadow) with a header in bold navy, "Your Tuesday", and small grey "12 events" on the right. Rows show a time on the left and a rounded event block, alternating light lavender blocks with a navy left edge and light yellow blocks with a gold left edge: "7:30 – Answer team texts"; "8:15 – Approve schedule change"; "9:00 – Chase late invoice"; "10:30 – Fix the job that came back"; "12:00 – "Quick question" ×9"; "2:00 – Order supplies"; "4:30 – Put out today's fire"; and a final "9:00 PM – Work ON the business" block in a red dashed outline with red strikethrough text. MIDDLE RIGHT: a rounded-corner portrait card of Vince (about 280x400px), with "Vince Perri" in bold navy and "M&A Advisor · CEPA®" in small grey underneath. BOTTOM: a full-width navy (#090C55) bar, about 140px tall, with white text on the left, about 26px: "Every one of them is an operations manager's job. Right now, that's you." and on the right a yellow (#FFDE6A) pill button with navy text: "Get the Free Guide →". LAYOUT TWEAKS: the calendar and portrait top-aligned, every calendar line readable on mobile, 70px margins. Style: premium, clean. No other text, no logos, no watermarks. Spell every word exactly as written.
 ```
 
-## 7. Two jobs, one person (split) – upload `Vinnce Perri-121.jpg` AND `Vinnce Perri-126.jpg`
+**Ad 7 – Split: Operations Manager vs Owner** · Upload BOTH: `Vinnce Perri-121.jpg` and `Vinnce Perri-126.jpg`
 ```
-Create a premium, minimal square 1:1 (1080x1080) Meta ad.
-
-PHOTOS: Use the two attached photos of Vince Perri. Keep his face, hair, beard, expression, body and clothes exactly as photographed in both. Do not redraw or retouch him.
-
-LAYOUT: The top 68% is split diagonally by a thin yellow (#FFDE6A) line.
-- Left: the serious photo (first attachment) in black and white, with a small white label in the lower left: "OPERATIONS MANAGER"
-- Right: the smiling photo (second attachment) in full colour, with a small yellow label in the lower right: "OWNER"
-- Bottom 32%: a solid deep navy (#0B1033) band with a centred white headline in Manrope ExtraBold, ~54px, two lines: "You built a business that can't run without you." Make only "can't run without you." yellow (#FFDE6A).
-- Under the headline, a small yellow pill button with navy text: "Get the Free Guide →"
-
-STYLE: premium, high contrast, minimal, 80px margins. No other text, no logos, no watermarks. Spell every word exactly as written.
+Create a premium square 1:1 (1080x1080) Meta ad using the two attached photos of Vince Perri. Keep his face, hair, beard, expression, body and clothes exactly as photographed in both. Do not redraw or retouch him. TOP 66% OF THE FRAME: split diagonally by a bold yellow (#FFDE6A) slash running from the top centre to slightly left of centre at the bottom. Left side: the serious photo (first attachment) in black and white, slightly darkened. Right side: the smiling photo (second attachment) in full colour. Both photos fade into navy at their bottom edges. Top centre, over the split: a pill with a dark navy fill and a yellow border, yellow caps text: "FOR $500K–$2M BUSINESS OWNERS". Lower left: a white label box with navy bold caps, "OPERATIONS MANAGER", and under it in small white text: "Approvals · Scheduling · Follow-ups · Fixing what comes back". Lower right: a yellow label box with navy bold caps, "OWNER", and under it, right-aligned in small white text: "Vision · Growth · Enterprise value". BOTTOM 34%: solid deep navy (#000924), all centred: a white headline in Manrope ExtraBold, about 58px, two lines: "You built a business" / "that can't run without you." with the second line in yellow (#FFDE6A). Below it, in Inter about 26px, light grey: "Because you're the owner and the operations manager." Below that, a yellow pill button with navy text: "Get the Free Operations Manager Guide →". LAYOUT TWEAKS: neither face covered by labels, 70px margins, balanced spacing. Style: premium, high contrast. No other text, no logos, no watermarks. Spell every word exactly as written.
 ```
 
-## 8. Newspaper – upload `Vinnce Perri-82.jpg`
+**Ad 8 – Newspaper** · Upload: `02_newspaper.png` (layout reference) AND `Vinnce Perri-82.jpg`
 ```
-Create a premium, minimal square 1:1 (1080x1080) Meta ad: a newspaper front page.
-
-PHOTO: Use the attached photo of Vince Perri. Keep his face, hair, beard, expression and black shirt exactly as photographed. Do not redraw or retouch him. Only convert it to a black-and-white halftone newspaper photo.
-
-LAYOUT: One clean broadsheet front page lying on a deep navy (#0B1033) desk, tilted about 2 degrees, with a soft shadow and real newsprint texture. Keep the page simple:
-1. Blackletter masthead: "The Owner's Ledger"
-2. Huge bold serif headline in capitals, two lines: "YOU BUILT A BUSINESS THAT" / "CAN'T RUN WITHOUT YOU". Draw a loose red marker circle around "CAN'T RUN WITHOUT YOU". The circle goes around the words and never crosses them.
-3. Below the headline: the large halftone photo of Vince, taking up about 45% of the page, with a small caption: "Vince Perri, M&A Advisor"
-No body text columns and no grey placeholder lines.
-- Below the newspaper, on the navy desk: a small yellow (#FFDE6A) rounded pill button with navy text: "Get the Free Guide →"
-
-STYLE: realistic, premium, uncluttered, 60px margins. No other text, no logos, no watermarks. Spell every word exactly as written.
+Recreate the first attached image (a newspaper ad) as a more polished, realistic square 1:1 (1080x1080) Meta ad with a better layout. For the newspaper photo, use the second attached photo of Vince Perri. Keep his face, features, beard, hair, expression and black shirt pixel-identical. Only convert it to black-and-white halftone newsprint. Do NOT redraw, relight or retouch his face. SCENE: a real broadsheet front page lying on a dark navy (#000924) desk, tilted about 3 degrees, with soft warm light from the top left, a soft shadow, realistic newsprint texture and a slight curl at the corners. The newspaper fills about 85% of the frame. NEWSPAPER LAYOUT, top to bottom: (1) Masthead in blackletter, centred, between thin double rules: "The Owner's Ledger". (2) Dateline strip in small serif caps with three items spread across: "$500K–$2M OWNERS EDITION", "OPERATIONS", "FREE GUIDE INSIDE". (3) A full-width headline in bold serif caps, two lines: "YOU BUILT A BUSINESS THAT" / "CAN'T RUN WITHOUT YOU", with a loose hand-drawn red marker ellipse (#D3262B) around "CAN'T RUN WITHOUT YOU". The ellipse sits AROUND the words with clear space and never crosses the letters. (4) A two-column story. Left column (about 55% wide): the halftone photo of Vince, with the caption underneath in small serif caps: "VINCE PERRI · M&A ADVISOR, CEPA®". Right column: a bold serif deck, about 34px: "Because you're the owner and the operations manager." Then a thin rule, then readable serif body text, about 22px, in three short paragraphs: "Every one of them is an operations manager's job. Right now, that's you." / "An operations manager keeps it moving while you're gone." / "The free guide shows owners how to hand off the day-to-day without it coming back to you." (5) Two white index cards taped near the bottom right of the page, slightly rotated: one says "OPERATIONS MANAGER", crossed out with a red marker line; the other says "OWNER" in navy (#090C55) marker. OUTSIDE THE NEWSPAPER, bottom centre, on the navy desk: a rounded pill button with a gold gradient (#B48C45 to #D8B878 to #A8823C) and navy text in Manrope ExtraBold, about 30px: "Get the Free Operations Manager Guide →". Keep 60px safe margins and cut nothing off. No extra text, no logos, no watermarks. Spell every word exactly as written.
 ```
 
-## 9. Chalkboard – upload `Vinnce Perri-21.jpg`
+**Ad 9 – Chalkboard** · Upload: `Vinnce Perri-21.jpg`
 ```
-Create a premium, minimal square 1:1 (1080x1080) Meta ad.
-
-PHOTO: Use the attached photo of Vince Perri (hands in pockets). Keep his face, hair, beard, expression, body and clothes exactly as photographed. Do not redraw or retouch him. You may extend the modern office background.
-
-LAYOUT: Vince stands on the right third, from the waist up, next to a real dark green chalkboard with a thin wooden frame mounted on the wall on the left.
-- Chalk handwriting at the top of the board, white, two lines: "You can't scale your business doing $10 tasks." Make "$10 tasks." yellow chalk.
-- Below it, a simple chalk graph: a line going down, the vertical axis labelled "Growth" and the horizontal axis labelled "$10 tasks".
-- Under the board: a small yellow (#FFDE6A) pill button with navy text: "Get the Free Guide →"
-
-STYLE: realistic photo, natural light, premium and uncluttered, 80px margins. No other text, no logos, no watermarks. Spell every word exactly as written.
+Create a premium, photorealistic square 1:1 (1080x1080) Meta ad. Use the attached photo of Vince Perri (hands in pockets, modern office). Keep his face, hair, beard, expression, body and clothes exactly as photographed. Do not redraw or retouch him. You may extend the bright office background. RIGHT 40% OF THE FRAME: Vince from the waist up, smiling slightly, in the bright office. LEFT 58%: a real dark green chalkboard with a wooden frame, hanging on the wall next to him, with natural light, a subtle chalk-dust texture and a soft shadow. On the board, in white chalk handwriting at the top, two lines: "You can't scale your business doing $10 tasks." with "$10 tasks." in yellow chalk and underlined. Below it, a hand-drawn chalk graph: a vertical axis labelled "GROWTH", a horizontal axis labelled "$10 TASKS YOU DO", and a yellow chalk line falling from top left to bottom right, ending in an arrow. Below the board: a yellow (#FFDE6A) rounded pill button with navy text, about 26px: "Get the Free Operations Manager Guide →". In the lower right, over the photo: a small dark navy rounded name tag with "Vince Perri" in white bold and "M&A Advisor · CEPA®" in small gold underneath. BOTTOM: a full-width navy (#090C55) bar, about 90px tall, with white bold text on the left, "Every one of them is an operations manager's job.", and yellow text on the right, "Right now, that's you." LAYOUT TWEAKS: Vince's face fully visible and not covered by the board or the tag, chalk text large and readable on mobile, 60px margins. No other text, no logos, no watermarks. Spell every word exactly as written.
 ```
 
-## 10. Editorial close-up – upload `Vinnce Perri-9.jpg`
+**Ad 10 – Editorial close-up** · Upload: `Vinnce Perri-9.jpg`
 ```
-Create a premium, minimal square 1:1 (1080x1080) Meta ad.
-
-PHOTO: Use the attached close-up photo of Vince Perri. Keep his face, eyes, hair, beard and expression exactly as photographed. Do not redraw or retouch him. Grade the background to a cool, deep navy (#0B1033) and let it fade to solid navy in the bottom 40% of the frame.
-
-LAYOUT: Vince's face fills the top 60%, positioned right of centre, eyes in the upper third.
-- Bottom left, on the solid navy: a white serif headline (like Playfair Display Black), ~72px, three lines: "Your business takes a vacation every time you do." Put a yellow (#FFDE6A) highlighter swipe behind "every time you do." with navy text on it.
-- Bottom right, small: a yellow pill button with navy text: "Get the Free Guide →"
-
-STYLE: cinematic, premium, high contrast, minimal, 80px margins. No other text, no logos, no watermarks. Spell every word exactly as written.
+Create a premium square 1:1 (1080x1080) Meta ad. Use the attached close-up photo of Vince Perri. Keep his face, eyes, hair, beard and expression exactly as photographed. Do not redraw or retouch him. Grade the background toward deep navy (#000924). TOP 58% OF THE FRAME: Vince's face, right of centre, eyes in the upper third, fading smoothly into solid deep navy below. Top left: a yellow (#FFDE6A) rounded pill with navy letter-spaced caps, about 20px: "FOR $500K–$2M BUSINESS OWNERS". BOTTOM 42%, left-aligned on navy: a white serif headline (like Playfair Display Black), about 76px, three lines: "Your business takes" / "a vacation" / "every time you do." with the last line in italic serif, navy text on a yellow (#FFDE6A) highlighter bar. Below it, in Inter about 28px, off-white: "An operations manager keeps it moving while you're gone." Bottom row: on the left, a small wordmark of white spaced serif caps "VINCE PERRI" with tiny gold caps "M&A ADVISOR · CEPA®" underneath; on the right, a yellow pill button with navy text: "Get the Free Guide →". LAYOUT TWEAKS: 64px margins, the headline as the clear focal point, and the text never covering his eyes. Style: cinematic, premium, high contrast. No other text, no logos, no watermarks. Spell every word exactly as written.
 ```
 
-## 11. Guide + Vince – upload `Vinnce Perri-126.jpg`
+**Ad 11 – Guide + Vince** · Upload: `Vinnce Perri-126.jpg`
 ```
-Create a premium, minimal square 1:1 (1080x1080) Meta ad.
+Create a premium square 1:1 (1080x1080) Meta ad. Use the attached photo of Vince Perri (smiling, hands together, black polo). Keep his face, hair, beard, expression, body, hands and clothes exactly as photographed. Do not redraw or retouch him. Only soften the palm-tree background into a warm blur. BACKGROUND: warm off-white (#F6F4EF). TOP, left-aligned: a small gold (#C39D50) letter-spaced label in caps, about 20px: "FREE GUIDE FOR $500K–$2M OWNERS". Below it, a navy (#090C55) headline in Manrope ExtraBold, about 62px, two lines: "You didn't start a business to do $10 tasks." with "$10 tasks." on a yellow (#FFDE6A) highlight. MIDDLE LEFT: a rounded-corner photo card of Vince from the waist up (about 430x560px, soft shadow). Overlapping the bottom right corner of the photo card: a realistic hardcover book, slightly angled. It has a deep navy (#0E1A33) cover with small gold spaced caps "VINCE PERRI" at the top; a bold white title on three lines, "THE OPERATIONS / MANAGER / GUIDE", with "MANAGER" in yellow; a short gold rule; and small light text: "Hand off the day-to-day without it coming back to you." A round yellow sticker on the top corner says "FREE GUIDE". MIDDLE RIGHT: a bold navy line, about 32px: "You started it to be the owner. Not the operations manager." Below it, a numbered list with navy circles and yellow numbers, text about 28px: "1 – See every $10 task still landing on you"; "2 – Hand off the day-to-day"; "3 – Without it coming back to you". BOTTOM: a full-width navy (#090C55) bar, about 150px tall: on the left in white bold, "Free:" followed by "The Operations Manager Guide" in yellow; on the right, a yellow pill button with navy text: "Get the Free Guide →". LAYOUT TWEAKS: no empty gaps, the right column vertically centred against the photo, 60px margins. Style: premium, bright, clean. No other text, no logos, no watermarks. Spell every word exactly as written.
+```
 
-PHOTO: Use the attached photo of Vince Perri (smiling, hands together). Keep his face, hair, beard, expression, body and clothes exactly as photographed. Do not redraw or retouch him, and do not change his hands. Soften the palm-tree background into a warm, light blur.
+---
 
-LAYOUT: Vince on the left, from the waist up, about 55% of the frame. On the right, in front of him on a light surface, a premium hardcover book standing upright at a slight angle: deep navy (#0B1033) matte cover, white bold title "THE OPERATIONS MANAGER GUIDE" with "MANAGER" in yellow (#FFDE6A), and "VINCE PERRI" small at the top. Add a small round yellow sticker on the corner of the book: "FREE".
-- Top, full width: a deep navy headline in Manrope ExtraBold, ~56px, on a warm off-white (#F6F4EF) band: "You didn't start a business to do $10 tasks." Make only "$10 tasks." navy on a yellow highlight.
-- Bottom right: a small navy pill button, yellow text: "Get the Free Guide →"
-
-STYLE: premium, bright, uncluttered, 80px margins. No other text, no logos, no watermarks. Spell every word exactly as written.
+If ChatGPT misspells a word, paste this and add the correct text after it:
+```
+Keep everything identical. Only fix the text so it reads exactly:
 ```
